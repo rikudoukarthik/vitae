@@ -5,6 +5,7 @@ position: "Research Assistant"
 address: "Nature Conservation Foundation, India"
 profilepic: cvpic.jpg
 www: kartrick.rbind.io
+phone: +91 8129116328
 email: "rikudoukarthik@gmail.com"
 github: rikudoukarthik
 date: "`r format(Sys.time(), '%B %Y')`"
@@ -32,7 +33,9 @@ library(glue)
 \textsc{Nationality} \> Indian \\
 \textsc{Marital Status} \> Unmarried \\
 \textsc{Driving Licence} \> LMV \& MCWG (India) \\
-\textsc{Languages} \> English, Malayalam (native), Hindi (medium), Kannada (passive), Japanese (passive) \\
+\textsc{Languages} \> English, Malayalam (native), Hindi \\
+\textsc{Interests} \> Ecological research (community ecology, migration, biogeography) \\
+ \> Data visualisation, poetry, birdwatching \href{https://ebird.org/profile/ODQxNTky}{(eBird profile)} \\
 
 \end{tabbing}
 
@@ -52,8 +55,8 @@ tribble(~ Degree, ~ Year, ~ Institution, ~ Where, ~Details,
 
 \begin{tabbing}
 
-\textsc{Software} \hspace{1cm} \= R, R Markdown, MS Office, Git/GitHub, ImageJ, Adobe Illustrator, Adobe Lightroom \\
-\textsc{Field} \> Experience with birds, butterflies, odonates 
+\textsc{Fieldwork} \hspace{0.5cm} \= Experience with bird research, butterfly and odonate surveys, vegetation sampling \\
+\textsc{Software} \> R, R Markdown, MS Office, Git/GitHub, ImageJ, Adobe Illustrator, Adobe Lightroom \\
 
 \end{tabbing}
 
@@ -65,11 +68,12 @@ tribble(~ Degree, ~ Year, ~ Institution, ~ Where, ~Details,
 ```{r}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Research Assistant", "Nature Conservation Foundation", "Bangalore, Karnataka, India", "Aug 2021--present", NA,
   "Field volunteer", "Panna Bird Survey 2022", "Panna, Madhya Pradesh, India", "Mar 2022", "Volunteered for first bird survey in Panna Tiger Reserve",
   "Part-time employee", "Biology Centre, Czech Academy of Sciences", "Ceske Budejovice, Czech Republic", "Dec 2020--Feb 2021", "Collation of Katerina Sam's Papua New Guinea bird datasets spanning ca. 4 years and uploading to eBird",
   "Part-time employee", "Biology Centre, Czech Academy of Sciences", "Ceske Budejovice, Czech Republic", "Oct 2020", "Calculated herbivory damage from images of collected leaves from Cameroon using ImageJ software",
   "Field volunteer", "Kerala Bird Atlas---Wet Season Survey 2019", "Palakkad, Kerala, India", "Jul 2019", "Assisted in monsoon bird survey in Silent Valley National Park",
-  "Research intern", "Centre for Ecology Development and Research (CEDAR Himalaya)", "Kumaon, Uttarakhand, India", "Apr 2018--May 2018", "Conducted a preliminary study of butterfly diversity patterns across a land-use intensification gradient in oak-pine forests of Kumaon Himalayas",
+  "Research intern", "Centre for Ecology Development and Research (CEDAR Himalaya)", "Kumaon, Uttarakhand, India", "Apr 2018--May 2018", "Studied butterfly diversity patterns across a land-use intensification gradient in oak-pine forests of Kumaon Himalayas",
   "Research volunteer", "Agumbe Rainforest Research Station (ARRS)", "Agumbe, Karnataka, India", "Apr 2017--May 2017", "Assisted in field work and data entry for a project on breeding ecology of the Yellow-wattled Lapwing",
   "Research volunteer", "Agumbe Rainforest Research Station (ARRS)", "Agumbe, Karnataka, India", "Apr 2017--May 2017", "Additionally, learned basics of camera trapping, scale counting for snakes and PCQ vegetation survey"
 ) %>% 
@@ -91,7 +95,7 @@ tribble(
 
 ## Research articles
 
-1. J Praveen, ..., **K Thrikkadeeri** et al. (2022). Kerala Bird Atlas 2015---20: features, outcomes and implications of a citizen-science project. *Current Science*. 
+1. J Praveen, ..., **K Thrikkadeeri** et al. (2022). Kerala Bird Atlas 2015---20: features, outcomes and implications of a citizen-science project. *Current Science* 122(3). 
 1. **K Thrikkadeeri**, R Chanda, RD Kishore and R Singh (under review). A photographic record of Jungle Cat *Felis chaus* from an urban hotspot in Bengaluru city, Karnataka, India.
 1. **K Thrikkadeeri**, I Freiberga, LR Jorge, K Sam (in prep.). Habitat selection in post-breeding temperate forest birds.
 1. **K Thrikkadeeri**, ..., G Shahabuddin (in prep.). A checklist of butterflies from a land-use intensification gradient in Kumaon Himalayas.
