@@ -1,0 +1,71 @@
+---
+name: Karthik Thrikkadeeri
+qualifications: MSc
+position: "Research Assistant"
+address: "Nature Conservation Foundation, India"
+profilepic: cvpic.jpg
+www: kartrick.rbind.io
+phone: +91 8129116328
+email: "rikudoukarthik@gmail.com"
+github: rikudoukarthik
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 3F6826
+output: vitae::awesomecv
+output_format: pdf_document
+---
+  
+  ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(glue)
+```
+
+\hspace{1cm}
+\hspace{1cm}
+
+I am an ecologist interested in community ecology, migration and biogeography, with a focus on birds. My current work involves using large-scale citizen science data on bird occurrence to answer ecological questions. Beyond profession, birding occupies a prominent role in my life and is much more than a hobby.
+
+# Personal Information
+
+\begin{tabbing}
+
+\textsc{Date of Birth} \hspace{0.5cm} \= 24 March 1999 \\
+\textsc{Sex} \> Male (he/him) \\
+\textsc{Nationality} \> Indian \\
+\textsc{Marital Status} \> Unmarried \\
+\textsc{Driving Licence} \> LMV \& MCWG (India) \\
+\textsc{Languages} \> English, Malayalam (native), Hindi \\
+\textsc{Interests} \> Ecological research (community ecology, migration, biogeography) \\
+\> Data visualisation, poetry, birdwatching \href{https://ebird.org/profile/ODQxNTky}{(eBird profile)} \\
+
+\end{tabbing}
+
+# Education
+
+```{r}
+library(tibble)
+tribble(~ Degree, ~ Year, ~ Institution, ~ Where, ~Details, 
+  "MSc in Ecology", "2019--21", "University of South Bohemia", "Ceske Budejovice, Czech Republic", "Thesis: \"Habitat selection in post-breeding temperate forest birds\"",
+  "MSc in Ecology", "2019--21", "University of South Bohemia", "Ceske Budejovice, Czech Republic", "Supervisor: Katerina Sam",
+  "BSc in Biotechnology, Chemistry, Zoology", "2016--19", "CHRIST (Deemed to be University)", "Bangalore, Karnataka, India", NA) %>% 
+  detailed_entries(Degree, Year, Institution, Where, Details)
+```
+
+
+# Skills
+
+\begin{tabbing}
+
+\textsc{Fieldwork} \hspace{0.5cm} \= Experience with bird research, butterfly and odonate surveys, vegetation sampling \\
+\textsc{Software} \> R, R Markdown, MS Office, Git/GitHub, ImageJ, Adobe Illustrator, Adobe Lightroom \\
+
+\end{tabbing}
+
+# Experience
+
+I have been birding for more than six years now, and the obsession has only been getting stronger. I have been fortunate enough to experience the birds, habitats and landscapes of three continents in the Old World, and this I believe has been an invaluable asset. I am currently an eBird Hotspot Editor for the states of Tripura and Meghalaya ([my eBird profile](https://ebird.org/profile/ODQxNTky)). I enjoy birding by ear and like to record and study bird vocalisations while birding.
+
+During my time as a master’s student in Czechia, I was part of the small but growing community of eBirders in the country, and thereby helped “survey” the region by seeding hotspots and feeding checklist data into eBird. I also lived in my university campus and therefore was able to build a comprehensive checklist of campus birds ([campus hotspot](https://ebird.org/hotspot/L9974526)). I was a prolific birder in my bachelor’s university campus as well ([hotspot](https://ebird.org/hotspot/L3349006)).
+
+I have participated in several bird surveys in India, in places like Silent Valley (KL), Panna (MP), Attappady (KL), Periyar (KL), Betul (MP), etc. I have helped conduct bird monitoring workshops in northeast India, and I recently also helped organise a bird survey in Wayanad (North) Forest Division (KL; [survey report](https://ebird.org/tripreport/111831)).
