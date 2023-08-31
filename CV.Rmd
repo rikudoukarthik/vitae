@@ -35,7 +35,9 @@ library(glue)
 \textsc{Driving Licence} \> LMV \& MCWG (India) \\
 \textsc{Languages} \> English, Malayalam (native), Hindi \\
 \textsc{Interests} \> Ecological research (community ecology, migration, biogeography) \\
- \> Birdwatching \href{https://ebird.org/profile/ODQxNTky}{(eBird profile)}, poetry and creative non-fiction writing, data analysis and visualisation \\
+ \> Birdwatching \href{https://ebird.org/profile/ODQxNTky}{(eBird profile)} \\
+ \> Poetry and creative non-fiction writing \\
+ \> Data analysis and visualisation \\
 
 \end{tabbing}
 
@@ -95,6 +97,12 @@ tribble(
 # Publications
 
 ## Research articles
+
+```{r publications} 
+
+# bibliography_entries(file = "my_publications.bib", "Pubs")
+
+```
 
 1. J Praveen, ..., **K Thrikkadeeri** et al. (2022). Kerala Bird Atlas 2015---20: features, outcomes and implications of a citizen-science project. *Current Science* 122(3). 
 1. **K Thrikkadeeri**, R Chanda, RD Kishore and R Singh (under review). A photographic record of Jungle Cat *Felis chaus* from an urban hotspot in Bengaluru city, Karnataka, India.
