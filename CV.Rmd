@@ -1,7 +1,7 @@
 ---
 name: Karthik Thrikkadeeri
 qualifications: MSc
-position: "Research Assistant"
+position: "Senior Research Assistant"
 address: "Nature Conservation Foundation, India"
 profilepic: cvpic.jpg
 www: kartrick.rbind.io
@@ -35,7 +35,7 @@ library(glue)
 \textsc{Driving Licence} \> LMV \& MCWG (India) \\
 \textsc{Languages} \> English, Malayalam (native), Hindi \\
 \textsc{Interests} \> Ecological research (community ecology, migration, biogeography) \\
- \> Data visualisation, poetry, birdwatching \href{https://ebird.org/profile/ODQxNTky}{(eBird profile)} \\
+ \> Birdwatching \href{https://ebird.org/profile/ODQxNTky}{(eBird profile)}, poetry and creative non-fiction writing, data analysis and visualisation \\
 
 \end{tabbing}
 
@@ -44,8 +44,8 @@ library(glue)
 ```{r}
 library(tibble)
 tribble(~ Degree, ~ Year, ~ Institution, ~ Where, ~Details, 
-  "MSc in Ecology", "2019--21", "University of South Bohemia", "Ceske Budejovice, Czech Republic", "Thesis: \"Habitat selection in post-breeding temperate forest birds\"",
-  "MSc in Ecology", "2019--21", "University of South Bohemia", "Ceske Budejovice, Czech Republic", "Supervisor: Katerina Sam",
+  "MSc in Ecology", "2019--21", "University of South Bohemia", "České Budějovice, Czech Republic", "Thesis: \"Habitat selection in post-breeding temperate forest birds\"",
+  "MSc in Ecology", "2019--21", "University of South Bohemia", "České Budějovice, Czech Republic", "Supervisor: Kateřina Sam",
   "BSc in Biotechnology, Chemistry, Zoology", "2016--19", "CHRIST (Deemed to be University)", "Bangalore, Karnataka, India", NA) %>% 
   detailed_entries(Degree, Year, Institution, Where, Details)
 ```
@@ -56,7 +56,7 @@ tribble(~ Degree, ~ Year, ~ Institution, ~ Where, ~Details,
 \begin{tabbing}
 
 \textsc{Fieldwork} \hspace{0.5cm} \= Experience with bird research, butterfly and odonate surveys, vegetation sampling \\
-\textsc{Software} \> R, R Markdown, MS Office, Git/GitHub, ImageJ, Adobe Illustrator, Adobe Lightroom \\
+\textsc{Software} \> R, R Markdown, Git/GitHub, MS Office, ImageJ \\
 
 \end{tabbing}
 
@@ -68,7 +68,8 @@ tribble(~ Degree, ~ Year, ~ Institution, ~ Where, ~Details,
 ```{r}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Research Assistant", "Nature Conservation Foundation", "Bangalore, Karnataka, India", "Aug 2021--present", NA,
+  "Senior Research Assistant", "Nature Conservation Foundation", "Bangalore, Karnataka, India", "Apr 2023--present", NA,
+  "Research Assistant", "Nature Conservation Foundation", "Bangalore, Karnataka, India", "Aug 2021--Mar 2023", NA,
   "Field volunteer", "Panna Bird Survey 2022", "Panna, Madhya Pradesh, India", "Mar 2022", "Volunteered for first bird survey in Panna Tiger Reserve",
   "Part-time employee", "Biology Centre, Czech Academy of Sciences", "Ceske Budejovice, Czech Republic", "Dec 2020--Feb 2021", "Collation of Katerina Sam's Papua New Guinea bird datasets spanning ca. 4 years and uploading to eBird",
   "Part-time employee", "Biology Centre, Czech Academy of Sciences", "Ceske Budejovice, Czech Republic", "Oct 2020", "Calculated herbivory damage from images of collected leaves from Cameroon using ImageJ software",
@@ -101,10 +102,6 @@ tribble(
 1. **K Thrikkadeeri**, ..., G Shahabuddin (in prep.). A checklist of butterflies from a land-use intensification gradient in Kumaon Himalayas.
 1. **K Thrikkadeeri** and A Viswanathan (in prep.). Birds in the time of COVID: Pandemic effects illuminated by birdwatchers, and implications for citizen science inference.
 
-## Popular articles
-
-1. **K Thrikkadeeri** and A Viswanathan (in prep.). Getting started with handling eBird data.
-
 ## Books 
 
 1. PU Antony, ..., **K Thrikkadeeri** et al. (2018). Butterflies of Christ University Main Campus---A Pictorial Guide. *Centre for Publications, Christ University, Bangalore, India*. 
@@ -116,7 +113,7 @@ tribble(
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
   "Volunteer", "Forest Watch", "Wayanad, Kerala, India", "2019--present", NA,
-  "MSc Student", "Laboratory of Multitrophic Interactions", "Ceske Budejovice, Czech Republic", "2019--2021", NA, 
+  "MSc Student", "Laboratory of Multitrophic Interactions", "České Budějovice, Czech Republic", "2019--2021", NA, 
   "Editorial Board", "Organising Committee, National Seminar DESIEI---2018", "Bangalore, Karnataka, India", "2018", "Majorly involved in all editorial work including editing, proofreading, typesetting and publishing of Abstracts book",
   "Student Volunteer", "Green Army, Christ University", "Bangalore, Karnataka, India", "2016--19", "A student-based forum for wildlife and conservation",
     "Student Volunteer", "Green Army, Christ University", "Bangalore, Karnataka, India", "2016--19", "Organised and took part in multiple nature camps and day-treks",
