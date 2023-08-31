@@ -101,6 +101,12 @@ tribble(
 ```{r publications} 
 
 # bibliography_entries(file = "my_publications.bib", "Pubs")
+scholar::get_publications("rGqtkNgAAAAJ") %>% 
+  detailed_entries(what = author,
+                   when = year,
+                   with = title,
+                   where = journal,
+                   why = cites)
 
 ```
 
