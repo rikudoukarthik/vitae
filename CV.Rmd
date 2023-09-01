@@ -332,25 +332,6 @@ tribble(
 
 \end{tabbing}
 
-# Memberships
-
-```{r}
-
-tribble(
-  ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Volunteer", "Forest Watch", "Wayanad, Kerala, India", "2019--present", NA,
-  "MSc Student", "Laboratory of Multitrophic Interactions", "České Budějovice, Czech Republic", "2019--2021", NA, 
-  "Student Volunteer", "Green Army, Christ University", "Bangalore, Karnataka, India", "2016--19", "A student-based forum for wildlife and conservation",
-    "Student Volunteer", "Green Army, Christ University", "Bangalore, Karnataka, India", "2016--19", "Organised and took part in multiple nature camps and day-treks",
-    "Student Volunteer", "Green Army, Christ University", "Bangalore, Karnataka, India", "2016--19", "Helped organise national seminars and conducted several awareness programmes like wildlife-themed workshops",
-    "Student Volunteer", "Green Army, Christ University", "Bangalore, Karnataka, India", "2016--19", "Conducted tree counts and tree plantation drives",
-    "Student Volunteer", "Green Army, Christ University", "Bangalore, Karnataka, India", "2016--19", "Worked for the rejuvenation of a dying lake in Bangalore city which included working with government authorities and acted as a liaison for the local communities"
-) %>% 
-  detailed_entries(role, dates, company, loc, details)
-
-```
-
-
 \newpage
 
 # Referees
