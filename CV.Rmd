@@ -91,12 +91,30 @@ tribble(
 
 # Skills
 
-\begin{tabbing}
+## Field methods
 
-\textsc{Fieldwork} \hspace{0.5cm} \= Experience with bird research, butterfly and odonate surveys, vegetation sampling \\
-\textsc{Software} \> R, R Markdown, Git/GitHub, QGIS, MS Office, ImageJ \\
+- Point counts, line transects, all-out/opportunistic search
+- Sound recording (birds), telephoto photography (birds), macro photography
+- Camera trapping, PCQ vegetation sampling, radio telemetry 
+- Extensive field experience in diverse---often physically challenging---landscapes, habitats and terrains
+- Excellent sight and sound ID of birds
 
-\end{tabbing}
+## Technical
+
+- Quantitative ecology (particularly community and macroecology) and research design
+- Data curation, management, processing and wrangling
+- Reproducibility and transparency in research workflows
+- Editing and proofreading of written material (English)
+
+## Software
+
+- R, R Markdown & allies, Git/GitHub, QGIS
+- ChatGPT, Bard
+- Audacity, Canva, MS Office, Google Suite, ImageJ 
+
+## Personal qualities
+
+Patient, persistent, self-motivated, ambitious
 
 # Certifications
 
