@@ -282,6 +282,14 @@ tribble(
   detailed_entries(WHAT, dates, EVENT, loc, details)
 ```
 
+# Mentoring
+
+\begin{tabbing}
+
+\textbf{Vyom Vyas} \hspace{0.2cm} \= Assisted in designing a behavioural study on the breeding ecology of Purple Sunbird \\
+
+\end{tabbing}
+
 # Memberships
 
 ```{r}
