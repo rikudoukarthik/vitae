@@ -309,16 +309,31 @@ tribble(
 ```
 
 
+\newpage
+
 # Referees
 
-## Mgr. Katerina Sam, Ph.D.
-Head, Laboratory of Multitrophic Interactions \newline
-Biology Centre of Czech Republic, Ceske Budejovice, Czech Republic \newline
-Email: katerinatvardikova@gmail.com \newline
-Phone no.: +420 776 823 074
+## Dr Ashwin Viswanathan
+Research Associate, Education and Public Engagement \newline
+Nature Conservation Foundation, Mysuru, India \newline
+Email: ashwinv@ncf-india.org \newline
 
-## Dr. Antony PU
+## Dr Suhel Quader
+Scientist, Education and Public Engagement \newline
+Nature Conservation Foundation, Mysuru, India \newline
+Email: suhelq@ncf-india.org \newline
+
+## Praveen J
+Scientist, Education and Public Engagement \newline
+Nature Conservation Foundation, Mysuru, India \newline
+Email: praveen.j@ncf-india.org \newline
+
+## Mgr Katerina Sam, PhD
+Head, Laboratory of Multitrophic Interactions \newline
+Biology Centre of the Czech Academy of Sciences, České Budějovice, Czech Republic \newline
+Email: katerinatvardikova@gmail.com \newline
+
+## Dr PU Antony
 Retired Professor, Department of Zoology \newline
-CHRIST (Deemed to be University), Bangalore, Karnataka, India \newline
+Christ University, Bengaluru, India \newline
 Email: antony.pu@christuniversity.in \newline
-Phone no.: +91 9886887131, +91 8310082860
