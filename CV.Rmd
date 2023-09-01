@@ -42,7 +42,7 @@ library(lubridate)
 \textsc{Interests} \> Ecological research (community ecology, migration, biogeography) \\
  \> Birdwatching \href{https://ebird.org/profile/ODQxNTky}{(eBird profile)} \\
  \> Poetry and creative non-fiction writing \\
- \> Quantitative data analysis and visualisation \\
+ \> Quantitative data analysis and visualisation \href{https://kartrick.rbind.io/kartrix/}{(fun data projects)} \\
 
 \end{tabbing}
 
@@ -104,7 +104,7 @@ orcid_employments("0000-0003-2863-5879") %>%
   reframe(details = case_when(
     
     `employment-summary.role-title` == "Part-time employee" & start_date == "Dec 2020" ~ 
-      "Collated Kateřina Sam's Papua New Guinea bird datasets spanning ca. 4 years and uploaded to eBird",
+      "Collated Kateřina Sam's Papua New Guinea bird datasets spanning c. 4 years and uploaded to eBird",
     
     `employment-summary.role-title` == "Part-time employee" & start_date == "Oct 2020" ~ 
       "Calculated herbivory damage from images of collected leaves from Cameroon using ImageJ software",
@@ -146,13 +146,40 @@ tribble(
 
 # Presentations
 
-## Conference Talks
+## Contributed
 
-\textbf{2019.} Inventory of butterfly species along a land-use intensification gradient in moist temperate forest biome in Kumaon Himalayas.
-\textit{Ecology Seminar, University of South Bohemia, Czech Republic.} 
+\begin{tabbing}
 
-\textbf{2018.} A study on avian diversity in an industrial area of the Palghat Gap.
-\textit{National Seminar on Development and Ecological Sustainability: Issues in Emerging India (DESIEI---2018), CHRIST (Deemed to be University), Bengaluru, India.}
+\textbf{2023}. \= Talk: \textit{Citizen Science at NCF Field Sites} (with Mittal Gala). \\
+\> NCF Annual Meet 2023, Mysuru, IN. \\
+
+\textbf{2022}. \> Talk: \textit{The impact of the COVID-19 pandemic on birding and birds in India}. \\
+\> NCF Annual Meet 2022, Mysuru, IN. \href{https://kartrick.rbind.io/talk/2022_ncf-am_covid-ebirding/}{(See slides or code)} \\
+
+\textbf{2022}. \> Talk: \textit{The impact of the COVID-19 pandemic on birding and birds in India}. \\
+\> International Ornithological Congress (IOC) 2022, online. \href{https://kartrick.rbind.io/talk/2022_ioc-covid-ebirding/}{(See slides or code)} \\
+
+\textbf{2022}. \> Poster: \textit{The impact of the COVID-19 pandemic on bird monitoring in India}. \\
+\> Bird Monitoring Symposium (BMS) 2022, online. \\
+
+\textbf{2019}. \> Talk: \textit{Inventory of butterfly species along a land-use intensification gradient in moist temperate forest biome} \\
+\> \textit{in Kumaon Himalayas}. \\
+\> Ecology Seminar, University of South Bohemia, CZ. \\
+
+\textbf{2018}. \> Talk: \textit{A study on avian diversity in an industrial area of the Palghat Gap}. \\
+\> National Seminar on Development and Ecological Sustainability: Issues in Emerging India (DESIEI) 2018, \\
+\> Bengaluru, IN. \\
+
+\end{tabbing}
+
+## Public
+
+\begin{tabbing}
+
+\textbf{2023}. \= Workshop: \textit{Analysing eBird data with R} (with Praveen J; c. 20 participants). \\
+\> Kerala Bird Monitoring Meet (KBMM) 2023, Thrissur, IN. \\
+
+\end{tabbing}
 
 # Publications
 
