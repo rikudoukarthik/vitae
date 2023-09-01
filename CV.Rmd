@@ -9,7 +9,10 @@ phone: +91 8129116328
 email: "rikudoukarthik@gmail.com"
 github: rikudoukarthik
 date: "`r format(Sys.time(), '%B %Y')`"
-headcolor: 3F6826
+headcolor: A92330
+header-includes:
+  - \definecolor{linkscolor}{HTML}{66151D}
+  - \hypersetup{colorlinks=true, urlcolor=linkscolor}
 output: vitae::awesomecv
 output_format: pdf_document
 ---
@@ -19,6 +22,8 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
 library(tidyverse)
 library(glue)
+library(rorcid)
+library(lubridate)
 ```
 
 \hspace{1cm}
@@ -37,19 +42,33 @@ library(glue)
 \textsc{Interests} \> Ecological research (community ecology, migration, biogeography) \\
  \> Birdwatching \href{https://ebird.org/profile/ODQxNTky}{(eBird profile)} \\
  \> Poetry and creative non-fiction writing \\
- \> Data analysis and visualisation \\
+ \> Quantitative data analysis and visualisation \\
 
 \end{tabbing}
 
 # Education
 
 ```{r}
-library(tibble)
-tribble(~ Degree, ~ Year, ~ Institution, ~ Where, ~Details, 
-  "MSc in Ecology", "2019--21", "University of South Bohemia", "České Budějovice, Czech Republic", "Thesis: \"Habitat selection in post-breeding temperate forest birds\"",
-  "MSc in Ecology", "2019--21", "University of South Bohemia", "České Budějovice, Czech Republic", "Supervisor: Kateřina Sam",
-  "BSc in Biotechnology, Chemistry, Zoology", "2016--19", "CHRIST (Deemed to be University)", "Bangalore, Karnataka, India", NA) %>% 
-  detailed_entries(Degree, Year, Institution, Where, Details)
+orcid_educations("0000-0003-2863-5879") %>% 
+  pluck("0000-0003-2863-5879", "affiliation-group", "summaries") %>% 
+  bind_rows() %>% 
+  # adding details to any item
+  group_by(pick(everything())) %>% 
+  reframe(details = case_when(
+    
+    `education-summary.role-title` == "MSc in Ecology" ~ c(
+      "Thesis: \"Habitat selection in post-breeding temperate forest birds\"",
+      "Supervisor: Kateřina Sam"
+    ),
+    TRUE ~ NA
+    
+  )) %>% 
+  distinct() %>% 
+  detailed_entries(what = `education-summary.role-title`,
+                   when = glue("{`education-summary.start-date.year.value`}--{`education-summary.end-date.year.value`}"),
+                   with = `education-summary.organization.name`,
+                   where = glue("{`education-summary.organization.address.city`}, {`education-summary.organization.address.country`}"),
+                   why = details)
 ```
 
 
@@ -67,18 +86,59 @@ tribble(~ Degree, ~ Year, ~ Institution, ~ Where, ~Details,
 
 # Experience
 
+## Work
+
+```{r}
+orcid_employments("0000-0003-2863-5879") %>% 
+  pluck("0000-0003-2863-5879", "affiliation-group", "summaries") %>% 
+  bind_rows() %>% 
+  mutate(across(c("employment-summary.end-date.year.value", "employment-summary.end-date.month.value"),
+                ~ case_when(is.na(.) ~ "present", TRUE ~ .))) %>% 
+  mutate(start_date = glue("{month(as.numeric(`employment-summary.start-date.month.value`), label = TRUE)} {`employment-summary.start-date.year.value`}"),
+         end_date = case_when(
+           `employment-summary.end-date.year.value` == "present" ~ `employment-summary.end-date.year.value`,
+           TRUE ~ glue("{month(as.numeric(`employment-summary.end-date.month.value`), label = TRUE)} {`employment-summary.end-date.year.value`}")
+         )) %>% 
+  # adding details to any item
+  group_by(pick(everything())) %>% 
+  reframe(details = case_when(
+    
+    `employment-summary.role-title` == "Part-time employee" & start_date == "Dec 2020" ~ 
+      "Collated Kateřina Sam's Papua New Guinea bird datasets spanning ca. 4 years and uploaded to eBird",
+    
+    `employment-summary.role-title` == "Part-time employee" & start_date == "Oct 2020" ~ 
+      "Calculated herbivory damage from images of collected leaves from Cameroon using ImageJ software",
+    
+    `employment-summary.role-title` == "Research intern" & 
+      str_detect(`employment-summary.organization.name`, "CEDAR") ~ 
+      "Studied butterfly diversity patterns across a land-use intensification gradient in oak-pine forests of Kumaon Himalayas",
+    
+    `employment-summary.role-title` == "Research volunteer" & 
+      str_detect(`employment-summary.organization.name`, "ARRS") ~ 
+      c("Assisted in field work and data entry for a project on breeding ecology of the Yellow-wattled Lapwing",
+        "Additionally, learned basics of camera trapping, scale counting for snakes and PCQ vegetation survey"),
+    
+    TRUE ~ NA
+    
+  )) %>% 
+  distinct() %>% 
+  arrange(desc(`employment-summary.start-date.year.value`),
+          desc(`employment-summary.start-date.month.value`)) %>% 
+  detailed_entries(what = `employment-summary.role-title`,
+                   when = case_when(start_date != end_date ~ glue("{start_date}--{end_date}"),
+                                    TRUE ~ start_date),
+                   with = `employment-summary.organization.name`,
+                   where = glue("{`employment-summary.organization.address.city`}, {`employment-summary.organization.address.country`}"),
+                   why = details)
+```
+
+## Other
+
 ```{r}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Senior Research Assistant", "Nature Conservation Foundation", "Bangalore, Karnataka, India", "Apr 2023--present", NA,
-  "Research Assistant", "Nature Conservation Foundation", "Bangalore, Karnataka, India", "Aug 2021--Mar 2023", NA,
   "Field volunteer", "Panna Bird Survey 2022", "Panna, Madhya Pradesh, India", "Mar 2022", "Volunteered for first bird survey in Panna Tiger Reserve",
-  "Part-time employee", "Biology Centre, Czech Academy of Sciences", "Ceske Budejovice, Czech Republic", "Dec 2020--Feb 2021", "Collation of Katerina Sam's Papua New Guinea bird datasets spanning ca. 4 years and uploading to eBird",
-  "Part-time employee", "Biology Centre, Czech Academy of Sciences", "Ceske Budejovice, Czech Republic", "Oct 2020", "Calculated herbivory damage from images of collected leaves from Cameroon using ImageJ software",
-  "Field volunteer", "Kerala Bird Atlas---Wet Season Survey 2019", "Palakkad, Kerala, India", "Jul 2019", "Assisted in monsoon bird survey in Silent Valley National Park",
-  "Research intern", "Centre for Ecology Development and Research (CEDAR Himalaya)", "Kumaon, Uttarakhand, India", "Apr 2018--May 2018", "Studied butterfly diversity patterns across a land-use intensification gradient in oak-pine forests of Kumaon Himalayas",
-  "Research volunteer", "Agumbe Rainforest Research Station (ARRS)", "Agumbe, Karnataka, India", "Apr 2017--May 2017", "Assisted in field work and data entry for a project on breeding ecology of the Yellow-wattled Lapwing",
-  "Research volunteer", "Agumbe Rainforest Research Station (ARRS)", "Agumbe, Karnataka, India", "Apr 2017--May 2017", "Additionally, learned basics of camera trapping, scale counting for snakes and PCQ vegetation survey"
+  "Field volunteer", "Kerala Bird Atlas---Wet Season Survey 2019", "Palakkad, Kerala, India", "Jul 2019", "Assisted in monsoon bird survey in Silent Valley National Park"
 ) %>% 
   detailed_entries(company, dates, role, loc, details)
 ```

@@ -2,13 +2,14 @@
 .Rhistory
 .RData
 .Ruserdata
-
 CV with markdown/
 examples/
 fonts/
 old editions/
-
 cvpic.jpg
 awesome-cv.cls
-
 *.pdf
+.httr-oauth
+
+# ORCID auth
+.Renviron
