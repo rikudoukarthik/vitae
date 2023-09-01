@@ -119,8 +119,8 @@ detailed_emp <- tribble(
     "Created a GitHub repository to collate functions used repeatedly when working with eBird data in R---to potentially be converted into a package",
     "Created a GitHub repository to collate mapping data useful for eBird data analysis in the Indian context---mostly contains open shapefiles of administrative units",
     "SoIB 2023: Cleaned, structured and organised GitHub repository",
-    "SoIB 2023: Unified various analyses into pipeline framework, functionised/parametrised scripts and added annotations, to improve accessibility to team as well as others",
-    "SoIB 2023: Contributed to analysis, visualisation and writing for two chapters (large-scale trends, systematic monitoring), and also produced website-specific outputs",
+    "SoIB 2023: Unified various analyses into pipeline framework, and functionised/parametrised scripts and added annotations, to improve accessibility to team as well as others",
+    "SoIB 2023: Contributed to analysis, visualisation and writing for two chapters (large-scale trends, systematic monitoring) of report, and also produced website-specific outputs",
     "SoIB 2023: Contributed to editing and proofreading as well as bibliography management for the full report"
   ),
   
@@ -129,8 +129,7 @@ detailed_emp <- tribble(
         "Established a version control (Git/GitHub) workflow for Bird Count India analyses to enable reproducibility as well as transparency",
         "Created a periodic (recurring) analysis framework to identify and track regions in India that are most underrepresented in eBird data, in order to identify regions of priority where concerted action (strategised from these metrics) is required",
         "Created eBirding point maps for the country as well as for each state in India, made easily accessible and updated monthly",
-        "Automated several periodically occurring data analysis tasks of Bird Count India, such as own tracking metrics, results of monthly & yearly challenges as well as major birding events, Patch Monitoring Project, etc.)",
-        "In addition to post-hoc birding event summaries, created automatable scripts to generate live summaries, using eBird API and R",
+        "Automated several periodically occurring data analysis tasks of Bird Count India, such as own tracking metrics, results of monthly & yearly challenges as well as major birding events (post-hoc from EBD and also live summaries using eBird API and R), Patch Monitoring Project, etc.",
         "Improved eBird data quality in India by creating updated and more fine-scale (district-wise) filters for Tripura state",
         "Assisted birders with their queries regarding eBird data and how to analyse it for their own studies"
   ),
@@ -208,9 +207,7 @@ my_emp %>%
 
 \end{tabbing}
 <!-- ## Public -->
-# Other Experience
-
-## Workshops
+# Workshops
 
 ```{r}
 tribble(
@@ -228,7 +225,7 @@ tribble(
   detailed_entries(EVENT, dates, WHAT, loc, details)
 ```
 
-## Field activities
+# Field activities
 
 ```{r}
 tribble(
@@ -244,6 +241,8 @@ tribble(
 ) %>% 
   detailed_entries(role, dates, company, loc, details)
 ```
+
+# Other activities
 
 ## Organisational
 
