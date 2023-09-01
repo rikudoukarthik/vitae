@@ -89,7 +89,6 @@ tribble(
                    why = Details)
 ```
 
-
 # Skills
 
 \begin{tabbing}
@@ -99,12 +98,7 @@ tribble(
 
 \end{tabbing}
 
-
-
-
-# Experience
-
-## Work
+# Work Experience
 
 ```{r}
 orcid_employments("0000-0003-2863-5879") %>% 
@@ -150,6 +144,61 @@ orcid_employments("0000-0003-2863-5879") %>%
                    why = details)
 ```
 
+# Publications
+
+## Research articles
+
+<!-- This can be selected publications, so manually enter. Particularly since space is limited and need to highlight my name. -->
+
+1. J Praveen, ..., **K Thrikkadeeri** et al. (2022). Kerala Bird Atlas 2015---20: features, outcomes and implications of a citizen-science project. *Current Science* 122(3). 
+1. **K Thrikkadeeri**, R Chanda, RD Kishore and R Singh (under review). A photographic record of Jungle Cat *Felis chaus* from an urban hotspot in Bengaluru city, Karnataka, India.
+1. **K Thrikkadeeri**, I Freiberga, LR Jorge, K Sam (in prep.). Habitat selection in post-breeding temperate forest birds.
+1. **K Thrikkadeeri**, ..., G Shahabuddin (in prep.). A checklist of butterflies from a land-use intensification gradient in Kumaon Himalayas.
+1. **K Thrikkadeeri** and A Viswanathan (in prep.). Birds in the time of COVID: Pandemic effects illuminated by birdwatchers, and implications for citizen science inference.
+
+## Books 
+
+1. PU Antony, ..., **K Thrikkadeeri** et al. (2018). Butterflies of Christ University Main Campus---A Pictorial Guide. *Centre for Publications, Christ University, Bangalore, India*. 
+
+# Presentations
+
+## Contributed
+
+\begin{tabbing}
+
+\textbf{2023}. \= Talk: \textit{Citizen Science at NCF Field Sites}. Presented with Mittal Gala. \\
+\> NCF Annual Meet 2023, Mysuru, IN. \\
+
+\textbf{2022}. \> Talk: \textit{The impact of the COVID-19 pandemic on birding and birds in India}. \\
+\> NCF Annual Meet 2022, Mysuru, IN. \href{https://kartrick.rbind.io/talk/2022_ncf-am_covid-ebirding/}{(See slides or code)} \\
+
+\textbf{2022}. \> Talk: \textit{The impact of the COVID-19 pandemic on birding and birds in India}. \\
+\> International Ornithological Congress 2022, online. \href{https://kartrick.rbind.io/talk/2022_ioc-covid-ebirding/}{(See slides or code)} \\
+
+\textbf{2022}. \> Poster: \textit{The impact of the COVID-19 pandemic on bird monitoring in India}. \\
+\> Bird Monitoring Symposium 2022, online. \\
+
+\textbf{2019}. \> Talk: \textit{Inventory of butterfly species along a land-use intensification gradient in moist temperate forest} \\
+\> \textit{biome in Kumaon Himalayas}. \\
+\> Ecology Seminar, University of South Bohemia, CZ. \\
+
+\textbf{2018}. \> Talk: \textit{A study on avian diversity in an industrial area of the Palghat Gap}. \\
+\> National Seminar on Development and Ecological Sustainability: Issues in Emerging India 2018, \\
+\> Bengaluru, IN. \\
+
+\end{tabbing}
+<!-- ## Public -->
+# Other Experience
+
+## Workshops
+
+```{r}
+tribble(
+  ~ WHAT, ~ EVENT, ~ loc, ~ dates, ~ details,
+  "Analysing eBird data with R", "Kerala Bird Monitoring Meet (KBMM) 2023", "Thrissur, IN", "Jun 2023", "Led workshop for c. 20 participants (birders) with assistance from Praveen J",
+) %>% 
+  detailed_entries(EVENT, dates, WHAT, loc, details)
+```
 
 ## Field activities
 
@@ -168,64 +217,27 @@ tribble(
   detailed_entries(role, dates, company, loc, details)
 ```
 
-## Organising
+## Organisational
 
-## Events
+```{r}
+tribble(
+  ~ WHAT, ~ EVENT, ~ loc, ~ dates, ~ details,
+  "Organiser", "North Wayanad Forest Division Bird Survey 2023", "North Wayanad, IN", "Mar 2023", "Helped formulate survey methodology, and managed technical logistics (eBird as a tool) and data quality.",
+) %>% 
+  detailed_entries(WHAT, dates, EVENT, loc, details)
+```
 
+## Volunteering
 
-
-# Presentations
-
-## Contributed
-
-\begin{tabbing}
-
-\textbf{2023}. \= Talk: \textit{Citizen Science at NCF Field Sites} (with Mittal Gala). \\
-\> NCF Annual Meet 2023, Mysuru, IN. \\
-
-\textbf{2022}. \> Talk: \textit{The impact of the COVID-19 pandemic on birding and birds in India}. \\
-\> NCF Annual Meet 2022, Mysuru, IN. \href{https://kartrick.rbind.io/talk/2022_ncf-am_covid-ebirding/}{(See slides or code)} \\
-
-\textbf{2022}. \> Talk: \textit{The impact of the COVID-19 pandemic on birding and birds in India}. \\
-\> International Ornithological Congress (IOC) 2022, online. \href{https://kartrick.rbind.io/talk/2022_ioc-covid-ebirding/}{(See slides or code)} \\
-
-\textbf{2022}. \> Poster: \textit{The impact of the COVID-19 pandemic on bird monitoring in India}. \\
-\> Bird Monitoring Symposium (BMS) 2022, online. \\
-
-\textbf{2019}. \> Talk: \textit{Inventory of butterfly species along a land-use intensification gradient in moist temperate forest biome} \\
-\> \textit{in Kumaon Himalayas}. \\
-\> Ecology Seminar, University of South Bohemia, CZ. \\
-
-\textbf{2018}. \> Talk: \textit{A study on avian diversity in an industrial area of the Palghat Gap}. \\
-\> National Seminar on Development and Ecological Sustainability: Issues in Emerging India (DESIEI) 2018, \\
-\> Bengaluru, IN. \\
-
-\end{tabbing}
-
-## Public
-
-\begin{tabbing}
-
-\textbf{2023}. \= Workshop: \textit{Analysing eBird data with R} (with Praveen J; c. 20 participants). \\
-\> Kerala Bird Monitoring Meet (KBMM) 2023, Thrissur, IN. \\
-
-\end{tabbing}
-
-# Publications
-
-## Research articles
-
-<!-- This can be selected publications, so manually enter. Particularly since space is limited and need to highlight my name. -->
-
-1. J Praveen, ..., **K Thrikkadeeri** et al. (2022). Kerala Bird Atlas 2015---20: features, outcomes and implications of a citizen-science project. *Current Science* 122(3). 
-1. **K Thrikkadeeri**, R Chanda, RD Kishore and R Singh (under review). A photographic record of Jungle Cat *Felis chaus* from an urban hotspot in Bengaluru city, Karnataka, India.
-1. **K Thrikkadeeri**, I Freiberga, LR Jorge, K Sam (in prep.). Habitat selection in post-breeding temperate forest birds.
-1. **K Thrikkadeeri**, ..., G Shahabuddin (in prep.). A checklist of butterflies from a land-use intensification gradient in Kumaon Himalayas.
-1. **K Thrikkadeeri** and A Viswanathan (in prep.). Birds in the time of COVID: Pandemic effects illuminated by birdwatchers, and implications for citizen science inference.
-
-## Books 
-
-1. PU Antony, ..., **K Thrikkadeeri** et al. (2018). Butterflies of Christ University Main Campus---A Pictorial Guide. *Centre for Publications, Christ University, Bangalore, India*. 
+```{r}
+tribble(
+  ~ WHAT, ~ EVENT, ~ loc, ~ dates, ~ details,
+  "Volunteer", "Bird Monitoring Symposium", "Online", "Mar 2023", "Managed session talks, Q&As and comments on Discord, as well as assisted participants with queries.",
+  "Volunteer", "NCF Annual Meet", "Mysuru, IN", "Oct 2022", "MCd a session of talks.",
+  "Volunteer", "Bird Monitoring Symposium", "Online", "Apr 2022", "Managed session talks, Q&As and comments on Discord, as well as assisted participants with queries.",
+) %>% 
+  detailed_entries(WHAT, dates, EVENT, loc, details)
+```
 
 # Memberships
 
