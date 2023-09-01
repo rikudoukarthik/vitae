@@ -98,6 +98,18 @@ tribble(
 
 \end{tabbing}
 
+# Certifications
+
+\begin{tabbing}
+
+2023 \hspace{0.1cm} \= \textbf{All-India Topper}: Ecology and Evolution (EY) | Graduate Aptitude Test in Engeering (GATE) 2023 \\
+\> Marks: 84.33; Score: \textbf{1000} \\
+
+2018 \hspace{0.1cm} \= \textbf{English CEFR C2}: IELTS 2018 (Academic) \\
+\> Listening: 9.0; Reading: 9.0; Writing: 7.0; Speaking: 8.0; Overall Band Score: \textbf{8.5} \\
+
+\end{tabbing}
+
 # Work Experience
 
 ```{r}
@@ -215,7 +227,9 @@ my_emp %>%
 \> Bengaluru, IN. \\
 
 \end{tabbing}
+
 <!-- ## Public -->
+
 # Workshops
 
 ```{r}
