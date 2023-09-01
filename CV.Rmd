@@ -183,7 +183,7 @@ orcid_employments("0000-0003-2863-5879") %>%
 \> Ecology Seminar, University of South Bohemia, CZ. \\
 
 \textbf{2018}. \> Talk: \textit{A study on avian diversity in an industrial area of the Palghat Gap}. \\
-\> National Seminar on Development and Ecological Sustainability: Issues in Emerging India 2018, \\
+\> National Seminar on Development and Ecological Sustainability: Issues in Emerging India (DESIEI) 2018, \\
 \> Bengaluru, IN. \\
 
 \end{tabbing}
@@ -196,6 +196,14 @@ orcid_employments("0000-0003-2863-5879") %>%
 tribble(
   ~ WHAT, ~ EVENT, ~ loc, ~ dates, ~ details,
   "Analysing eBird data with R", "Kerala Bird Monitoring Meet (KBMM) 2023", "Thrissur, IN", "Jun 2023", "Led workshop for c. 20 participants (birders) with assistance from Praveen J",
+
+  "Introduction to Merlin and eBird tools", "Assam University, Silchar", "Silchar, IN", "May 2022", "Assisted Mittal Gala in short outdoor training session for eight MSc Physics students",
+  "Introduction to Merlin and eBird tools", "Assam University, Silchar", "Silchar, IN", "May 2022", "Introduced features of Merlin Bird ID and eBird Mobile, and demonstrated practical usage",
+  "Introduction to Merlin and eBird tools", "Assam University, Silchar", "Silchar, IN", "May 2022", "Interacted with students on general queries about birds and birding",
+  
+    "Bird monitoring and eBird", "College of Agriculture, Lembucherra", "Lembucherra, IN", "May 2022", "Assisted Mittal Gala in indoor workshop for c. 40 participants (students and local birders)",
+    "Bird monitoring and eBird", "College of Agriculture, Lembucherra", "Lembucherra, IN", "May 2022", "Provided technical assistance, coordination support, and ad-hoc engagement with audience",
+
 ) %>% 
   detailed_entries(EVENT, dates, WHAT, loc, details)
 ```
@@ -222,7 +230,13 @@ tribble(
 ```{r}
 tribble(
   ~ WHAT, ~ EVENT, ~ loc, ~ dates, ~ details,
-  "Organiser", "North Wayanad Forest Division Bird Survey 2023", "North Wayanad, IN", "Mar 2023", "Helped formulate survey methodology, and managed technical logistics (eBird as a tool) and data quality.",
+  
+  "Organiser", "North Wayanad Forest Division Bird Survey 2023", "North Wayanad, IN", "Mar 2023", "Helped formulate survey methodology, and managed technical logistics (eBird as a tool) and data quality",
+  
+  "Organiser, Editor", "National Seminar DESIEI 2018", "Bengaluru, IN", "Dec 2018", 
+  "Member of symposium's Organising Committee",
+  "Organiser, Editor", "National Seminar DESIEI 2018", "Bengaluru, IN", "Dec 2018", 
+  "Led editorial work including editing, proofreading, typesetting, and publishing of Abstracts book",
 ) %>% 
   detailed_entries(WHAT, dates, EVENT, loc, details)
 ```
@@ -232,9 +246,9 @@ tribble(
 ```{r}
 tribble(
   ~ WHAT, ~ EVENT, ~ loc, ~ dates, ~ details,
-  "Volunteer", "Bird Monitoring Symposium", "Online", "Mar 2023", "Managed session talks, Q&As and comments on Discord, as well as assisted participants with queries.",
-  "Volunteer", "NCF Annual Meet", "Mysuru, IN", "Oct 2022", "MCd a session of talks.",
-  "Volunteer", "Bird Monitoring Symposium", "Online", "Apr 2022", "Managed session talks, Q&As and comments on Discord, as well as assisted participants with queries.",
+  "Volunteer", "Bird Monitoring Symposium", "Online", "Mar 2023", "Managed session talks, Q&As and comments on Discord, as well as assisted participants with queries",
+  "Volunteer", "NCF Annual Meet", "Mysuru, IN", "Oct 2022", "MCd a session of talks",
+  "Volunteer", "Bird Monitoring Symposium", "Online", "Apr 2022", "Managed session talks, Q&As and comments on Slack, as well as assisted participants with queries",
 ) %>% 
   detailed_entries(WHAT, dates, EVENT, loc, details)
 ```
@@ -247,7 +261,6 @@ tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
   "Volunteer", "Forest Watch", "Wayanad, Kerala, India", "2019--present", NA,
   "MSc Student", "Laboratory of Multitrophic Interactions", "České Budějovice, Czech Republic", "2019--2021", NA, 
-  "Editorial Board", "Organising Committee, National Seminar DESIEI---2018", "Bangalore, Karnataka, India", "2018", "Majorly involved in all editorial work including editing, proofreading, typesetting and publishing of Abstracts book",
   "Student Volunteer", "Green Army, Christ University", "Bangalore, Karnataka, India", "2016--19", "A student-based forum for wildlife and conservation",
     "Student Volunteer", "Green Army, Christ University", "Bangalore, Karnataka, India", "2016--19", "Organised and took part in multiple nature camps and day-treks",
     "Student Volunteer", "Green Army, Christ University", "Bangalore, Karnataka, India", "2016--19", "Helped organise national seminars and conducted several awareness programmes like wildlife-themed workshops",
