@@ -288,6 +288,7 @@ tribble(
 ```{r}
 tribble(
   ~ WHAT, ~ EVENT, ~ loc, ~ dates, ~ details,
+  "Office Hours", "eBird data analysis consultation, Bird Count India", "Online", "Dec 2022--present", "Offered office hours consultation for individuals or groups on how to analyse eBird data (see https://birdcount.in/analysis-consultation/)",
   "Volunteer", "Bird Monitoring Symposium", "Online", "Mar 2023", "Managed session talks, Q&As and comments on Discord, as well as assisted participants with queries",
   "Volunteer", "NCF Annual Meet", "Mysuru, IN", "Oct 2022", "MCd a session of talks",
   "Volunteer", "Bird Monitoring Symposium", "Online", "Apr 2022", "Managed session talks, Q&As and comments on Slack, as well as assisted participants with queries",
