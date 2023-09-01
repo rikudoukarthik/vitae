@@ -225,7 +225,7 @@ tribble(
   detailed_entries(EVENT, dates, WHAT, loc, details)
 ```
 
-# Field activities
+# Field Activities
 
 ```{r}
 tribble(
@@ -242,7 +242,7 @@ tribble(
   detailed_entries(role, dates, company, loc, details)
 ```
 
-# Other activities
+# Other Activities
 
 ## Organisational
 
@@ -268,6 +268,16 @@ tribble(
   "Volunteer", "Bird Monitoring Symposium", "Online", "Mar 2023", "Managed session talks, Q&As and comments on Discord, as well as assisted participants with queries",
   "Volunteer", "NCF Annual Meet", "Mysuru, IN", "Oct 2022", "MCd a session of talks",
   "Volunteer", "Bird Monitoring Symposium", "Online", "Apr 2022", "Managed session talks, Q&As and comments on Slack, as well as assisted participants with queries",
+) %>% 
+  detailed_entries(WHAT, dates, EVENT, loc, details)
+```
+
+## Administrative
+
+```{r}
+tribble(
+  ~ WHAT, ~ EVENT, ~ loc, ~ dates, ~ details,
+  "Coordinator", "High-performance server administration", "Bengaluru, IN", "2022--present", "Coordinated usage of NCF High Altitude Programme's high-end server among various interested parties, as well as its maintenance",
 ) %>% 
   detailed_entries(WHAT, dates, EVENT, loc, details)
 ```
