@@ -48,6 +48,8 @@ library(lubridate)
 
 # Education
 
+## Degrees
+
 ```{r}
 orcid_educations("0000-0003-2863-5879") %>% 
   pluck("0000-0003-2863-5879", "affiliation-group", "summaries") %>% 
@@ -69,6 +71,22 @@ orcid_educations("0000-0003-2863-5879") %>%
                    with = `education-summary.organization.name`,
                    where = glue("{`education-summary.organization.address.city`}, {`education-summary.organization.address.country`}"),
                    why = details)
+```
+
+## Courses/Workshops
+
+```{r}
+tribble(
+  ~Name, ~Year, ~Institution, ~where, ~Details,
+  "Introduction to Remote Sensing using QGIS", "21--25 Nov 2022", 
+  "Azim Premji University", "Bengaluru, IN", 
+  "Basic principles of remote sensing, characterising different features of land surface, generating maps with land cover statistics",
+        ) %>% 
+  detailed_entries(what = Name, 
+                   when = Year,
+                   with = Institution, 
+                   where = where,
+                   why = Details)
 ```
 
 
@@ -216,8 +234,6 @@ tribble(
 
 ```
 
-
-\newpage
 
 # Referees
 
