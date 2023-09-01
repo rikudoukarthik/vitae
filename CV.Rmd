@@ -94,7 +94,7 @@ tribble(
 \begin{tabbing}
 
 \textsc{Fieldwork} \hspace{0.5cm} \= Experience with bird research, butterfly and odonate surveys, vegetation sampling \\
-\textsc{Software} \> R, R Markdown, Git/GitHub, MS Office, ImageJ \\
+\textsc{Software} \> R, R Markdown, Git/GitHub, QGIS, MS Office, ImageJ \\
 
 \end{tabbing}
 
@@ -116,20 +116,20 @@ detailed_emp <- tribble(
   ~`employment-summary.role-title`, ~start_date, ~details,
   
   "Senior Research Assistant", "Apr 2023", c(
-    "Created a GitHub repository to collate functions used repeatedly when working with eBird data in R---to potentially be converted into a package",
-    "Created a GitHub repository to collate mapping data useful for eBird data analysis in the Indian context---mostly contains open shapefiles of administrative units",
-    "SoIB 2023: Cleaned, structured and organised GitHub repository",
-    "SoIB 2023: Unified various analyses into pipeline framework, and functionised/parametrised scripts and added annotations, to improve accessibility to team as well as others",
     "SoIB 2023: Contributed to analysis, visualisation and writing for two chapters (large-scale trends, systematic monitoring) of report, and also produced website-specific outputs",
-    "SoIB 2023: Contributed to editing and proofreading as well as bibliography management for the full report"
+    "SoIB 2023: Unified various analyses into pipeline framework, and functionised/parametrised scripts and added annotations, to improve accessibility to team as well as others",
+    "SoIB 2023: Cleaned, structured and organised GitHub repository to archive",
+    "SoIB 2023: Contributed to editing and proofreading as well as bibliography management for the full report",
+    "Created a GitHub repository to collate functions used repeatedly when working with eBird data in R---to potentially be converted into a package",
+    "Created a GitHub repository to collate mapping data useful for eBird data analysis in the Indian context---mostly contains open shapefiles of administrative units"
   ),
   
   "Research Assistant", "Aug 2021", c(
     "Analysed the effect of the COVID-19 pandemic on birdwatching and eBird data in India, and its implications for research using this data; wrote up and submitted manuscript to a peer-reviewed journal",
         "Established a version control (Git/GitHub) workflow for Bird Count India analyses to enable reproducibility as well as transparency",
-        "Created a periodic (recurring) analysis framework to identify and track regions in India that are most underrepresented in eBird data, in order to identify regions of priority where concerted action (strategised from these metrics) is required",
-        "Created eBirding point maps for the country as well as for each state in India, made easily accessible and updated monthly",
-        "Automated several periodically occurring data analysis tasks of Bird Count India, such as own tracking metrics, results of monthly & yearly challenges as well as major birding events (post-hoc from EBD and also live summaries using eBird API and R), Patch Monitoring Project, etc.",
+        "Created a periodic analysis framework to identify and track regions in India that are most underrepresented in eBird data, in order to identify regions of priority where concerted action (strategised from these metrics) is required",
+        "Created eBirding point maps for the country as well as for each state in India, made easily accessible to users and updated monthly",
+        "Automated several periodically occurring data analysis tasks of Bird Count India (tracking metrics, results of challenges & birding events [post-hoc from EBD and also live summaries using eBird API and R], etc.)",
         "Improved eBird data quality in India by creating updated and more fine-scale (district-wise) filters for Tripura state",
         "Assisted birders with their queries regarding eBird data and how to analyse it for their own studies"
   ),
@@ -185,23 +185,23 @@ my_emp %>%
 
 \begin{tabbing}
 
-\textbf{2023}. \= Talk: \textit{Citizen Science at NCF Field Sites}. Presented with Mittal Gala. \\
+2023 \hspace{0.1cm} \= \textbf{Talk}: \textit{Citizen Science at NCF Field Sites}. Presented with Mittal Gala. \\
 \> NCF Annual Meet 2023, Mysuru, IN. \\
 
-\textbf{2022}. \> Talk: \textit{The impact of the COVID-19 pandemic on birding and birds in India}. \\
+2022 \hspace{0.1cm} \> \textbf{Talk}: \textit{The impact of the COVID-19 pandemic on birding and birds in India}. \\
 \> NCF Annual Meet 2022, Mysuru, IN. \href{https://kartrick.rbind.io/talk/2022_ncf-am_covid-ebirding/}{(See slides or code)} \\
 
-\textbf{2022}. \> Talk: \textit{The impact of the COVID-19 pandemic on birding and birds in India}. \\
+2022 \hspace{0.1cm} \> \textbf{Talk}: \textit{The impact of the COVID-19 pandemic on birding and birds in India}. \\
 \> International Ornithological Congress 2022, online. \href{https://kartrick.rbind.io/talk/2022_ioc-covid-ebirding/}{(See slides or code)} \\
 
-\textbf{2022}. \> Poster: \textit{The impact of the COVID-19 pandemic on bird monitoring in India}. \\
+2022 \hspace{0.1cm} \> \textbf{Poster}: \textit{The impact of the COVID-19 pandemic on bird monitoring in India}. \\
 \> Bird Monitoring Symposium 2022, online. \\
 
-\textbf{2019}. \> Talk: \textit{Inventory of butterfly species along a land-use intensification gradient in moist temperate forest} \\
+2019 \hspace{0.1cm} \> \textbf{Talk}: \textit{Inventory of butterfly species along a land-use intensification gradient in moist temperate forest} \\
 \> \textit{biome in Kumaon Himalayas}. \\
 \> Ecology Seminar, University of South Bohemia, CZ. \\
 
-\textbf{2018}. \> Talk: \textit{A study on avian diversity in an industrial area of the Palghat Gap}. \\
+2018 \hspace{0.1cm} \> \textbf{Talk}: \textit{A study on avian diversity in an industrial area of the Palghat Gap}. \\
 \> National Seminar on Development and Ecological Sustainability: Issues in Emerging India (DESIEI) 2018, \\
 \> Bengaluru, IN. \\
 
