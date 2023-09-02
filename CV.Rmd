@@ -96,8 +96,8 @@ tribble(
 - Point counts, line transects, all-out/opportunistic search
 - Sound recording (birds), telephoto photography (birds), macro photography
 - Camera trapping, PCQ vegetation sampling, radio telemetry 
-- Extensive field experience in diverse---often physically challenging---landscapes, habitats and terrains
-- Excellent sight and sound ID of birds
+- Extensive field experience in diverse and challenging landscapes, habitats and terrains
+- Excellent sight and sound ID of birds (India, Europe)
 
 ## Technical
 
@@ -114,7 +114,7 @@ tribble(
 
 ## Personal qualities
 
-Patient, persistent, self-motivated, ambitious
+Patience, persistence, self-motivation, ambition, time management
 
 # Certifications
 
@@ -307,6 +307,7 @@ tribble(
 tribble(
   ~ WHAT, ~ EVENT, ~ loc, ~ dates, ~ details,
   "Office Hours", "eBird data analysis consultation, Bird Count India", "Online", "Dec 2022--present", "Offered office hours consultation for individuals or groups on how to analyse eBird data (see https://birdcount.in/analysis-consultation/)",
+  "Regional Reviewer & Hotspot Editor", "eBird data quality", "Online", "May 2022--present", "Regional Reviewer for Tripura, IN; Hotspot Editor for Tripura, In & Meghalaya, IN",
   "Volunteer", "Bird Monitoring Symposium", "Online", "Mar 2023", "Managed session talks, Q&As and comments on Discord, as well as assisted participants with queries",
   "Volunteer", "NCF Annual Meet", "Mysuru, IN", "Oct 2022", "MCd a session of talks",
   "Volunteer", "Bird Monitoring Symposium", "Online", "Apr 2022", "Managed session talks, Q&As and comments on Slack, as well as assisted participants with queries",
