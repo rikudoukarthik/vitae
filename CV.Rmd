@@ -40,9 +40,10 @@ library(lubridate)
 \textsc{Driving Licence} \> LMV \& MCWG (India) \\
 \textsc{Languages} \> English, Malayalam (native), Hindi \\
 \textsc{Interests} \> Ecological research (community ecology, migration, biogeography) \\
+ \> Quantitative data analysis and visualisation \href{https://kartrick.rbind.io/kartrix/}{(fun data projects)} \\
  \> Birdwatching \href{https://ebird.org/profile/ODQxNTky}{(eBird profile)} \\
  \> Poetry and creative non-fiction writing \\
- \> Quantitative data analysis and visualisation \href{https://kartrick.rbind.io/kartrix/}{(fun data projects)} \\
+ \> Hip-hop \\
 
 \end{tabbing}
 
@@ -91,7 +92,7 @@ tribble(
 
 # Skills
 
-## Field methods
+## Field
 
 - Point counts, line transects, all-out/opportunistic search
 - Sound recording (birds), telephoto photography (birds), macro photography
@@ -110,11 +111,11 @@ tribble(
 
 - R, R Markdown & allies, Git/GitHub, QGIS
 - ChatGPT, Bard
-- Audacity, Canva, MS Office, Google Suite, ImageJ 
+- Audacity, MS Office, Google Suite, Canva, ImageJ 
 
 ## Personal qualities
 
-Patience, persistence, self-motivation, ambition, time management
+Ambitious, patient, persistent, self-motivated, time management skills
 
 # Certifications
 
@@ -213,7 +214,7 @@ my_emp %>%
 
 1. **K Thrikkadeeri** and A Viswanathan *(rejected, in revision)*. Effects of COVID-19 pandemic on birding in India, and implications for citizen science inference.
 1. **K Thrikkadeeri**, ..., A Viswanathan *(under review)*. Occurrence of West Himalayan Bush Warbler (*Locustella kashmirensis*) in Eastern Himalaya Terai.
-1. **K Thrikkadeeri**, R Chanda, RD Kishore and R Singh *(under review)*. Sighting of the Jungle Cat in an urban hotspot in Bengaluru city, Karnataka, India.
+1. **K Thrikkadeeri**, R Chanda, RD Kishore and RP Singh *(under review)*. Sighting of the Jungle Cat in an urban hotspot in Bengaluru city, Karnataka, India.
 1. A Viswanathan, ..., **K Thrikkadeeri** et al. *(in prep.)*. State of India’s Birds 2023: Background and Methodology.
 1. **K Thrikkadeeri**, I Freiberga, LR Jorge, K Sam *(in prep.)*. Habitat selection in post-breeding temperate forest birds.
 1. **K Thrikkadeeri**, ..., G Shahabuddin *(in prep.)*. A checklist of butterflies from a land-use intensification gradient in Kumaon Himalayas.
