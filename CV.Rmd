@@ -1,11 +1,11 @@
 ---
 name: Karthik Thrikkadeeri
 qualifications: MSc
-position: "Senior Research Assistant"
-address: "Nature Conservation Foundation, India"
+position: "PhD Student, Montaño Lab"
+address: "Louisiana State University, USA"
 profilepic: cvpic.jpg
 www: kartrick.rbind.io
-phone: +91 8129116328
+phone: +1 2252058756
 email: "rikudoukarthik@gmail.com"
 github: rikudoukarthik
 date: "`r format(Sys.time(), '%B %Y')`"
@@ -109,7 +109,7 @@ tribble(
 
 ## Software
 
-- R, R Markdown & allies, Git/GitHub, QGIS
+- R, R Markdown & allies, Git/GitHub, Quarto, QGIS
 - ChatGPT, Bard
 - Audacity, MS Office, Google Suite, Canva, ImageJ 
 
@@ -203,23 +203,27 @@ my_emp %>%
 
 <!-- This can be selected publications, so manually enter. Particularly since space is limited and need to highlight my name. -->
 
-1. **K Thrikkadeeri** and A Viswanathan (2023). Birdwatchers’ resilience to perturbation in India buffers citizen science from pandemic-induced biases. Preprint at *bioRxiv*: https://doi.org/10.1101/2023.12.11.571083.
-1. L Schillé, ..., **K Thrikkadeeri**, et al. (2023). Latitudinal gradient in avian insectivory: complementary effects of climate, habitat and bird diversity. Preprint at *bioRxiv*: https://doi.org/10.1101/2023.01.19.524212.
+1. A Viswanathan, **K Thrikkadeeri**, et al. *(2025)*. State of India’s Birds 2023: A framework to leverage semi-structured citizen science for bird conservation. *Accepted in Ecosphere, preprint at bioRxiv*: https://doi.org/10.1101/2024.09.05.611348
+1. **K Thrikkadeeri** & A Viswanathan (2024). Despite short-lived changes, COVID-19 pandemic had minimal large-scale impact on citizen science participation in India. *Ornithological Applications* 126(4). DOI: https://doi.org/10.1093/ornithapp/duae024 
+1. **K Thrikkadeeri**, ..., A Viswanathan (2024). Birdwatchers piecing together Locustella jigsaw: Insights on the wintering distribution of the cryptic West Himalayan Bush Warbler *Locustella kashmirensis*. *Indian BIRDS* 20(3). 
+1. L Schillé, ..., **K Thrikkadeeri**, et al. (2024). Latitudinal gradient in avian insectivory: complementary effects of climate, habitat and bird diversity. *Journal of Biogeography* 51(6). DOI: https://doi.org/10.1111/jbi.14808 
 1. J Praveen, ..., **K Thrikkadeeri**, et al. (2022). Kerala Bird Atlas 2015--20: features, outcomes and implications of a citizen-science project. *Current Science* 122(3). 
+
+## Software
+
+1. **K Thrikkadeeri** (2024). *skimmr: Working with eBird data made easy*. R package version 0.0.0.9005. URL: https://rikudoukarthik.github.io/skimmr/
 
 ## Reports
 
-1. **SoIB 2023**. *State of India's Birds, 2023: Range, trends, and conservation status*. The SoIB Partnership. Pp. 119. Available online: https://stateofindiasbirds.in/#soib_report.
+1. **SoIB** (2023). *State of India's Birds, 2023: Range, trends, and conservation status*. The SoIB Partnership. Pp. 119. DOI: https://doi.org/10.5281/zenodo.11124590 
 
 ## Books 
 
-1. PU Antony, ..., **K Thrikkadeeri** et al. (2018). *Butterflies of Christ University Main Campus---A Pictorial Guide*. Centre for Publications, Christ University, Bangalore, India. 
+1. PU Antony, ..., **K Thrikkadeeri**, et al. (2018). *Butterflies of Christ University Main Campus---A Pictorial Guide*. Centre for Publications, Christ University, Bangalore, India. 
 
 ## In pipeline
 
-1. **K Thrikkadeeri**, ..., A Viswanathan *(under review)*. Birdwatchers rapidly unravel the wintering distribution of the cryptic West Himalayan Bush Warbler (*Locustella kashmirensis*).
 1. **K Thrikkadeeri** and A Viswanathan *(in prep.)*. No evidence at large scale for “return” of bird life in the Indian anthropause.
-1. A Viswanathan, **K Thrikkadeeri**, et al. *(in prep.)*. State of India’s Birds 2023: A blueprint to leverage semi-structured citizen science for bird conservation.
 1. **K Thrikkadeeri**, I Freiberga, LR Jorge, K Sam *(in prep.)*. Post-breeding birds dynamically track habitat structure over the season in a Central European forest.
 1. **K Thrikkadeeri**, ..., G Shahabuddin *(in prep.)*. A checklist of butterflies from a land-use intensification gradient in Kumaon Himalayas.
 
@@ -258,6 +262,8 @@ my_emp %>%
 ```{r}
 tribble(
   ~ WHAT, ~ EVENT, ~ loc, ~ dates, ~ details,
+  
+  "Using R for analyses using eBird data: An introduction", "Kerala Bird Monitoring Meet (KBMM) 2024", "Thrissur, IN", "Jun 2024", "Led c. 3 h crash course for c. 20 participants (birders) with assistance from Praveen J",
   "Analysing eBird data with R", "Kerala Bird Monitoring Meet (KBMM) 2023", "Thrissur, IN", "Jun 2023", "Led workshop for c. 20 participants (birders) with assistance from Praveen J",
 
   "Introduction to Merlin and eBird tools", "Assam University, Silchar", "Silchar, IN", "May 2022", "Assisted Mittal Gala in short outdoor training session for eight MSc Physics students",
