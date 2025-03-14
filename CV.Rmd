@@ -132,6 +132,19 @@ Ambitious, patient, persistent, self-motivated, time management skills
 
 \end{tabbing}
 
+# Awards
+
+\begin{tabbing}
+
+2021 \hspace{0.1cm} \= \textbf{Rector's Award} for outstanding results in study: CZK 2,500 (~€100) \\
+\> University of South Bohemia, 25 May 2021 \\
+
+2020 \> Graduate study \textbf{Merit Scholarship} of the Ministry of Education, Youth and Sports: \\
+\> CZK 1,500 (~€60) awarded per month for 10 months in second year of study \\
+\> University of South Bohemia, October 2020--May 2021 \\
+
+\end{tabbing}
+
 # Work Experience
 
 ```{r}
@@ -257,7 +270,21 @@ my_emp %>%
 
 <!-- ## Public -->
 
-# Workshops
+# Teaching
+
+## Courses
+
+```{r}
+tribble(
+  ~ WHAT, ~ EVENT, ~ loc, ~ dates,
+  
+  "BIOL 1208 Introductory Biology Lab", "Louisiana State University", "Baton Rouge, USA", "Jan 2025--present", 
+
+) %>% 
+  detailed_entries(EVENT, dates, WHAT, loc)
+```
+
+## Workshops
 
 ```{r}
 tribble(
