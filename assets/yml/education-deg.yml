@@ -1,0 +1,22 @@
+phd:
+  title: PhD, Biological Sciences (ongoing)
+  location: Baton Rouge, US
+  date: 2025--present
+  description: Louisiana State University
+  details:
+    # - 'Thesis: "Habitat selection in post-breeding temperate forest birds"'
+    - 'Division: Systematics, Ecology and Evolution'
+    - 'Supervisor: Flavia Montaño-Centellas'
+master:
+  title: MSc, Ecology
+  location: České Budějovice, CZ
+  date: 2019--21
+  description: University of South Bohemia
+  details:
+    - 'Thesis: "Habitat selection in post-breeding temperate forest birds"'
+    - 'Supervisor: Kateřina Sam'
+bachelor:
+  title: BSc, Biotechnology, Chemistry, Zoology
+  location: Bengaluru, IN
+  date: 2016--19
+  description: Christ University

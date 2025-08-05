@@ -1,0 +1,21 @@
+ielts2023:
+  title: English CEFR C2
+  location: 
+  date: 2023
+  description: IELTS (Academic)
+  details:
+    - "Listening: 9.0; Reading: 9.0; Writing: 7.5; Speaking: 8.0; Overall Band Score: 8.5."
+gate2023:
+  title: All-India Topper, Ecology and Evolution (EY)
+  location: 
+  date: 2023
+  description: Graduate Aptitude Test in Engeering (GATE)
+  details:
+    - "Marks: 84.33; Score: 1000."
+ielts2018:
+  title: English CEFR C2
+  location: 
+  date: 2018
+  description: IELTS (Academic)
+  details:
+    - "Listening: 9.0; Reading: 9.0; Writing: 7.0; Speaking: 8.0; Overall Band Score: 8.5."
