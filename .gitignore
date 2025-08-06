@@ -5,10 +5,7 @@
 
 CV with markdown/
 examples/
-fonts/
 past_versions/
-awesome-cv.cls
-.httr-oauth
 
-# ORCID auth
+# ORCID auth (but not using API now so unnecessary)
 .Renviron
