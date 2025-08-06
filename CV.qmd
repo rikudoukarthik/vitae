@@ -336,7 +336,7 @@ tribble(
 #| output: asis
 
 tribble(
-  ~title, ~location, ~date, ~description, 
+  ~title, ~location, ~date, ~description, ~details,
   
   # "BIOL 1209 Introductory Biology Lab II", 
   # "Baton Rouge, US", 
@@ -347,9 +347,10 @@ tribble(
   "Baton Rouge, US", 
   "Jan 2025--May 2025",
   "Louisiana State University",
+  "Overall performance evaluation 'Exceeds Expectations'"
   
 ) %>% 
-  resume_entry()
+  resume_entry(details = "details")
 
 ```
 
@@ -454,6 +455,12 @@ tribble(
 
 # Other Activities
 
+### Peer review
+
+<br>
+
+Reviewed for *Journal of Threatened Taxa*.
+
 ### Organisational
 
 ```{r}
@@ -546,7 +553,7 @@ tribble(
 
 # Mentoring
 
-- **Vyom Vyas:** Assisted in designing a behavioural study on the breeding ecology of Purple Sunbird
+**Vyom Vyas:** Assisted in designing a behavioural study on the breeding ecology of Purple Sunbird
 
 {{< pagebreak >}}
 
