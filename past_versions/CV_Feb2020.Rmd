@@ -1,0 +1,197 @@
+---
+name: Karthik Thrikkadeeri
+surname: 
+qualifications: BSc
+position: "MSc Student"
+address: "Department of Ecology, University of South Bohemia"
+phone: +420 777 652 960
+profilepic: cvpic.jpg
+www: thepageofsixpaths.wordpress.com
+email: "rikudoukarthik@gmail.com"
+twitter: 
+linkedin: thrikkadeeri
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 3F6826
+output: vitae::awesomecv
+output_format: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(glue)
+```
+
+\hspace{1cm}
+\hspace{1cm}
+
+# Personal Information
+
+\begin{tabbing}
+
+\textbf{Date of Birth:} \hspace{1.7cm} \= 24 March 1999 \\
+\textbf{Sex:} \> Male  (he/him) \\
+\textbf{Nationality:} \> Indian \\
+\textbf{Marital Status:} \> Unmarried \\
+\textbf{Driving Licence:} \> LMV \& MCWG (India) \\
+\textbf{Languages:} \> \textbf{Malayalam} \hspace{2cm} \= \textbf{English} \hspace{2cm} \= \textbf{Hindi} \hspace{2cm} \= \textbf{Kannada} \\
+                    \> Fluent (native speaker) \> Proficient \> Intermediate \> Passive \\
+                    \> \> 8.5 IELTS---2018 
+
+\end{tabbing}
+
+
+
+\hspace{1cm}
+
+# Skills
+
+\begin{tabbing}
+
+\textbf{Software skills:} \hspace{1cm} \= Microsoft Office, Adobe Lightroom, Adobe Illustrator (Intermediate)\\
+                          \> R, CANOCO, R Markdown (Beginner) \\
+\textbf{Identification skills:} \> Experience with birds, butterflies, odonates \\
+\textbf{Laboratory skills:} \> Basic knowledge of DNA extraction, PCR, microbial culture
+
+\end{tabbing}
+
+
+\hspace{1cm}
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~Details, 
+  "MSc in Ecology", "2019 -- present", "University of South Bohemia", "Ceske Budejovice, Czech Republic", "Thesis: \"Post-breeding movement of forest birds along a habitat quality gradient\"",   "MSc in Ecology", "2019 -- present", "University of South Bohemia", "Ceske Budejovice, Czech Republic", "Supervisor: Mgr., Ph.D. Katerina Sam",
+  "BSc in Biotechnology, Chemistry, Zoology", "2016 -- 19", "CHRIST (Deemed to be University)", "Bangalore, Karnataka, India", NA,
+  "Senior Secondary Education", "2014 -- 16", "Palghat Lions School", "Palakkad, Kerala, India", NA,
+  
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where, Details)
+```
+
+
+\hspace{1cm}
+
+# Research Experience
+
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Field work volunteer", "Kerala Bird Atlas - Wet Season Survey 2019", "Palakkad, Kerala, India", "July 2019", "Assisted in monsoon bird survey in Silent Valley National Park",
+  "Research Intern", "Centre for Ecology Development and Research (CEDAR Himalaya)", "Kumaon, Uttarakhand, India", "April 2018 -- May 2018", "Conducted a preliminary study of butterfly diversity patterns across a land-use intensification gradient in oak-pine forests of Kumaon Himalayas",
+  "Research Intern", "Centre for Ecology Development and Research (CEDAR Himalaya)", "Kumaon, Uttarakhand, India", "April 2018 -- May 2018", "Obtained photographic records of butterfly species without collection of specimens",
+  "Research Volunteer", "Agumbe Rainforest Research Station (ARRS)", "Agumbe, Karnataka, India", "April 2017 -- May 2017", "Assisted in field work and data entry for a project on the breeding ecology of the Yellow-wattled Lapwing",
+  "Research Volunteer", "Agumbe Rainforest Research Station (ARRS)", "Agumbe, Karnataka, India", "April 2017 -- May 2017", "Additionally, learned basics of camera trapping, scale counting for snakes and PCQ vegetation survey"
+) %>% 
+  detailed_entries(company, dates, role, loc, details)
+```
+
+
+\hspace{1cm}
+
+# Presentations
+
+## Research Talks
+```{r}
+tribble(
+  ~ when, ~ title, ~ event, ~ where, 
+  "2019", "Inventory of Butterfly Species along a Land-use Intensification Gradient in Moist Temperate Forest Biome in Kumaon Himalayas", "Student Talk, Ecology Seminar", "University of South Bohemia, Ceske Budejovice, Czech Republic",
+  "2018", "A Study on Avian Diversity in an Industrial Area of the Palghat Gap", "Student Talk, National Seminar---DESIEI-2018", "CHRIST (Deemed to be University), Bengaluru, India", 
+  
+) %>% 
+  arrange(desc(when)) %>%
+  detailed_entries(
+    what = glue("<event> \\newline <where>", .open = "<", .close = ">"),
+    when = when,
+    with = title,
+    where = ,
+    why = , 
+    .protect = FALSE
+    )
+```
+
+
+
+\hspace{1cm}
+
+# Publications
+
+## Books 
+```{r}
+tibble(
+    title = "Butterflies of Christ University Main Campus - A Pictorial Guide",
+    author = "PU Antony, ..., K Thrikkadeeri, et al.",
+    journal = "",
+    number = " ",
+    cites = 0,
+    year = "2018",
+    cid = NA,
+    pubid = NA
+    ) %>% 
+  detailed_entries(
+    what = author,
+    when = year,
+    with = title,
+    ) 
+```
+## Abstracts
+```{r}
+  tibble(
+    title = "A Study on Avian Diversity in an Industrial Area of the Palghat Gap",
+    author = "K Thrikkadeeri, PU Antony",
+    journal = "DESIEI-2018",
+    number = " ",
+    cites = 0,
+    year = "2018",
+    cid = NA,
+    pubid = NA
+  ) %>% 
+  arrange(desc(year)) %>%
+  detailed_entries(
+    what = author,
+    when = year,
+    with = title,
+    where = journal
+  )
+```
+
+
+
+\hspace{1cm}
+
+# Memberships
+
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Student Volunteer", "Forest Watch", "Wayanad, Kerala, India", "2019 -- present", "A charitable organisation aiming to combine the passion of youth with knowledge of wildlife biology and human society, to design locally apt conservation strategies",
+  "Editorial Board", "Organising Committee---National Seminar on Development and Ecological Sustainability: Issues in Emerging India (DESIEI-2018)", "Bangalore, Karnataka, India", "2018", "Majorly involved in all editorial work including editing, proofreading, typesetting and publishing of the Abstracts book",
+  "Student Volunteer", "Green Army, CHRIST (Deemed to be University)", "Bangalore, Karnataka, India", "2016 -- 19", "A student-based forum for wildlife and conservation",
+    "Student Volunteer", "Green Army, CHRIST (Deemed to be University)", "Bangalore, Karnataka, India", "2016 -- 19", "Organised and took part in multiple nature camps and day-treks",
+    "Student Volunteer", "Green Army, CHRIST (Deemed to be University)", "Bangalore, Karnataka, India", "2016 -- 19", "Helped organise national seminars and conducted several awareness programmes like wildlife-themed workshops",
+    "Student Volunteer", "Green Army, CHRIST (Deemed to be University)", "Bangalore, Karnataka, India", "2016 -- 19", "Conducted tree counts and tree plantation drives",
+    "Student Volunteer", "Green Army, CHRIST (Deemed to be University)", "Bangalore, Karnataka, India", "2016 -- 19", "Worked for the rejuvenation of a dying lake in Bangalore city which included working with government authorities and acted as a liaison for the local communities"
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+
+\hspace{1cm}
+
+# Referees
+
+## Mgr. Katerina Sam, Ph.D.
+Head, Laboratory of Multitrophic Interactions \newline
+Biology Centre of Czech Republic, Ceske Budejovice, Czech Republic \newline
+Email: katerinatvardikova@gmail.com \newline
+Phone no.: +420 776 823 074
+
+## Dr. Antony PU
+Professor, Department of Zoology \newline
+CHRIST (Deemed to be University), Bangalore, Karnataka, India \newline
+Email: antony.pu@christuniversity.in \newline
+Phone no.: +91 9886887131, +91 8310082860
