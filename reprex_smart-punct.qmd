@@ -1,0 +1,33 @@
+---
+author:
+  firstname: John Doe
+format: awesomecv-typst
+execute:
+  echo: false
+  warning: false
+---
+
+# Markdown text
+
+Nice formatting---including Pandoc's *Smart Punctuation*.
+
+# Resume entries
+
+```{r}
+#| output: asis
+
+library(typstcv)
+library(dplyr)
+
+tribble(
+  ~title, ~location, ~date, ~description, ~details,
+  
+  "Title", 
+  "Location", 
+  "01--02 Jan 2025",
+  "Date input here with '--'",
+  "Detail which uses an em-dash---lovely! But still not **bold**."
+) |>
+  resume_entry(details = "details")
+```
+
