@@ -3,7 +3,7 @@ author:
   firstname: Karthik
   lastname: Thrikkadeeri
   position: "PhD Student, Montaño Lab"
-  address: "Louisiana State University, USA"
+  address: "Louisiana State University, Baton Rouge, USA"
   contacts:
     - icon: fa envelope
       text: "rikudoukarthik@gmail.com"
@@ -20,9 +20,9 @@ author:
     # - icon: fa brands linkedin
     #   text: LinkedIn
     #   url: https://linkedin.com/in/example
-    # - icon: fa brands bluesky
-    #   text: Bluesky
-    #   url: https://bsky.app/profile/kartrick.bsky.social
+    - icon: assets/icon/si-bluesky.svg # fa brands bluesky not working
+      text: Bluesky
+      url: https://bsky.app/profile/kartrick.bsky.social
 profile-photo: "cvpic.jpg"
 # date: "`r format(Sys.time(), format = '%B %Y')`"
 style:
@@ -30,6 +30,7 @@ style:
    color-accent-dark: "771822"
    font-text: "Libertinus Serif"
    font-header: "Petrona"
+   # for original Font Awesome font, see https://github.com/kazuyanagimoto/cv/tree/d7118a5d6317f3758447a8a9054a8577f42bc30a/assets/fonts/fontawesome
 format: awesomecv-typst
 ---
 
