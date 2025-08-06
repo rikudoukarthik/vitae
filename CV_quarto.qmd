@@ -23,7 +23,7 @@ author:
     - icon: assets/icon/si-bluesky.svg # fa brands bluesky not working
       text: Bluesky
       url: https://bsky.app/profile/kartrick.bsky.social
-profile-photo: "cvpic.jpg"
+# profile-photo: "cvpic.jpg"
 style:
    color-accent: "A92330"
    color-accent-dark: "771822"
