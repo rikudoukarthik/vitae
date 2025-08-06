@@ -32,6 +32,12 @@ style:
    font-header: "Petrona"
    # for original Font Awesome font, see https://github.com/kazuyanagimoto/cv/tree/d7118a5d6317f3758447a8a9054a8577f42bc30a/assets/fonts/fontawesome
 format: awesomecv-typst
+# install.packages("typstcv", repos = "https://kazuyanagimoto.r-universe.dev")
+execute: 
+  echo: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -41,6 +47,7 @@ library(tidyverse)
 library(glue)
 # library(rorcid)
 library(lubridate)
+library(typstcv)
 ```
 
 # Personal Information
@@ -63,39 +70,117 @@ library(lubridate)
 
 ### Degrees
 
-{{< yaml assets/yml/education-deg.yml >}}
+```{r}
+#| output: asis
+
+tribble(
+  ~title, ~location, ~date, ~description, ~detail1, ~detail2,
+  
+  "PhD, Biological Sciences (ongoing)", "Baton Rouge, US", "2025--present",
+  "Louisiana State University", 
+  # "Thesis: XYZ"
+  "Division: Systematics, Ecology and Evolution",
+  "Supervisor: Flavia Montaño-Centellas",
+  
+  "MSc, Ecology", "České Budějovice, CZ", "2019--21",
+  "University of South Bohemia", 
+  "Thesis: Habitat selection in post-breeding temperate forest birds",
+  "Supervisor: Kateřina Sam",
+  
+) %>% 
+  resume_entry(details = grep("^detail", names(.)))
+
+```
+
+```{r}
+#| output: asis
+
+tribble(
+  ~title, ~location, ~date, ~description, 
+  
+  "BSc, Biotechnology, Chemistry, Zoology", "Bengaluru, IN", "2016--19",
+  "Christ University"
+  
+) %>% 
+  resume_entry()
+
+```
 
 ### Courses/workshops
 
-{{< yaml assets/yml/education-courses.yml >}}
+```{r}
+#| output: asis
+
+tribble(
+  ~title, ~location, ~date, ~description, ~details,
+  
+  "Introduction to Remote Sensing using QGIS", 
+  "Bengaluru, IN", 
+  "21--25 Nov 2022",
+  "Azim Premji University",
+  "Basic principles of remote sensing, characterising different features of land surface, generating maps with land cover statistics"
+) %>% 
+  resume_entry(details = "details")
+
+```
 
 # Certifications
 
-{{< yaml assets/yml/certifications.yml >}}
+```{r}
+#| output: asis
+
+tribble(
+  ~title, ~date, ~description, ~details, 
+  
+  "English CEFR C2", 
+  "2023",
+  "IELTS (Academic)", 
+  "Listening: 9.0; Reading: 9.0; Writing: 7.5; Speaking: 8.0; Overall Band Score: 8.5.",
+  
+  "All-India Topper, Ecology and Evolution (EY)", 
+  "2023",
+  "Graduate Aptitude Test in Engeering (GATE)", 
+  "Marks: 84.33; Score: 1000.",
+
+  "English CEFR C2", 
+  "2018",
+  "IELTS (Academic)", 
+  "Listening: 9.0; Reading: 9.0; Writing: 7.0; Speaking: 8.0; Overall Band Score: 8.5."
+  
+) %>% 
+  resume_entry(details = "details")
+
+```
 
 # Awards
 
-```{=typst}
-#resume-entry(
-  title: "Rector's Award",
-  location: "České Budějovice, CZ",
-  date: "2021",
-  description: "University of South Bohemia, 25 May 2021",
-)
-#resume-item[
-  - CZK 2,500 (\~€100), for outstanding results in study
-]
+```{r}
+#| output: asis
 
-#resume-entry(
-  title: "Graduate study Merit Scholarship",
-  location: "České Budějovice, CZ",
-  date: "2020",
-  description: "University of South Bohemia, Oct 2020--May 2021",
-)
-#resume-item[
-  - CZK 1,500 (\~€60) awarded per month for 10 months in second year of study
-  - Scholarship of the Ministry of Education, Youth and Sports
-]
+data.frame(
+  title = "Rector's Award",
+  location = "České Budějovice, CZ",
+  date =  "2021",
+  description = "University of South Bohemia, 25 May 2021",
+  details = "CZK 2,500 (\\~€100), for outstanding results in study"
+) %>% 
+  resume_entry(details = "details")
+
+```
+
+```{r}
+#| output: asis
+
+data.frame(
+  title = "Graduate study Merit Scholarship",
+  location = "České Budějovice, CZ",
+  date =  "2020",
+  description = "University of South Bohemia, Oct 2020--May 2021",
+  details1 = "CZK 1,500 (\\~€60) awarded per month for 10 months in second year of study",
+  details2 = "Scholarship of the Ministry of Education, Youth and Sports"
+) %>% 
+  resume_entry(details = grep("^detail", names(.)))
+
 ```
 
 # Publications
@@ -159,17 +244,159 @@ library(lubridate)
 
 # Work Experience
 
-{{< yaml assets/yml/work.yml >}}
+```{r}
+#| output: asis
+
+tribble(
+  ~title, ~location, ~date, ~description, 
+  
+  "Louisiana State University", 
+  "Baton Rouge, US", 
+  "Jan 2025--present",
+  "Graduate Assistant"
+  
+) %>% 
+  resume_entry()
+
+```
+
+```{r}
+#| output: asis
+
+tribble(
+  ~title, ~location, ~date, ~description, 
+  ~detail1, ~detail2, ~detail3, ~detail4, ~detail5, ~detail6, ~detail7,
+  
+  "Nature Conservation Foundation", 
+  "Bengaluru, IN", 
+  "Apr 2023--Dec 2024",
+  "Senior Research Assistant", 
+  
+  "SoIB 2023: Contributed to analysis, visualisation and writing for two chapters (large-scale trends, systematic monitoring) of report, and also produced website-specific outputs",
+  "SoIB 2023: Unified various analyses into pipeline framework, and functionised/parametrised scripts and added annotations, to improve accessibility to team as well as others",
+  "SoIB 2023: Cleaned, structured and organised GitHub repository to archive",
+  "SoIB 2023: Contributed to editing and proofreading as well as bibliography management for the full report", 
+  "Created an R package 'skimmr' for functions used repeatedly when working with eBird data in R in the Indian context",
+  "Created a Shiny app based on eBird API that allows the user to generate a summary of the eBirding that happened in a given administrative unit on a given date(s)",
+  "Created a GitHub repository to collate mapping data useful for eBird data analysis in the Indian context---mostly contains open shapefiles of administrative units",
+  
+  "Nature Conservation Foundation", 
+  "Bengaluru, IN", 
+  "Aug 2021--Mar 2023",
+  "Research Assistant", 
+  
+  "Analysed the effect of the COVID-19 pandemic on birdwatching and eBird data in India, and its implications for research using this data; wrote up and submitted manuscript to a peer-reviewed journal",
+  "Established a version control (Git/GitHub) workflow for Bird Count India analyses to enable reproducibility as well as transparency",
+  "Created a periodic analysis framework to identify and track regions in India that are most underrepresented in eBird data, in order to identify regions of priority where concerted action (strategised from these metrics) is required",
+  "Created eBirding point maps for the country as well as for each state in India, made easily accessible to users and updated monthly", 
+  "Automated several periodically occurring data analysis tasks of Bird Count India (tracking metrics, results of challenges & birding events [post-hoc from EBD and also live summaries using eBird API and R], etc.)",
+  "Improved eBird data quality in India by creating updated and more fine-scale (district-wise) filters for Tripura state",
+  "Assisted birders with their queries regarding eBird data and how to analyse it for their own studies",
+  
+  "Biology Centre of the Czech Academy of Sciences", 
+  "České Budějovice, CZ", 
+  "Dec 2020--Feb 2021",
+  "Part-time Employee", 
+  "Collated Kateřina Sam's Papua New Guinea bird datasets spanning c. 4 years and uploaded to eBird",
+  NA_character_, NA_character_, NA_character_, NA_character_, NA_character_, NA_character_,  
+  
+  "Biology Centre of the Czech Academy of Sciences", 
+  "České Budějovice, CZ", 
+  "Oct 2020",
+  "Part-time Employee", 
+  "Calculated herbivory damage from images of collected leaves from Cameroon using ImageJ",
+  NA_character_, NA_character_, NA_character_, NA_character_, NA_character_, NA_character_,  
+  
+  "Centre for Ecology Development and Research (CEDAR Himalaya)", 
+  "Kumaon, IN", 
+  "Apr 2018--May 2018",
+  "Research intern", 
+  "Studied butterfly diversity patterns across a land-use intensification gradient in oak-pine forests of Kumaon Himalayas",
+  NA_character_, NA_character_, NA_character_, NA_character_, NA_character_, NA_character_,  
+  
+  "Agumbe Rainforest Research Station (ARRS)", 
+  "Agumbe, IN", 
+  "Apr 2017--May 2017",
+  "Research volunteer", 
+  "Assisted in field work and data entry for a project on breeding ecology of the Yellow-wattled Lapwing",
+  "Additionally, learned basics of camera trapping, scale counting for snakes and PCQ vegetation survey", 
+  NA_character_, NA_character_, NA_character_, NA_character_, NA_character_,  
+  
+  
+  
+) %>% 
+  resume_entry(details = grep("^detail", names(.)))
+
+```
 
 # Teaching
 
 ### Courses
 
-{{< yaml assets/yml/teaching-courses.yml >}}
+```{r}
+#| output: asis
+
+tribble(
+  ~title, ~location, ~date, ~description, 
+  
+  # "BIOL 1209 Introductory Biology Lab II", 
+  # "Baton Rouge, US", 
+  # "Aug 2025--present",
+  # "Louisiana State University",
+  # 
+  "BIOL 1208 Introductory Biology Lab I", 
+  "Baton Rouge, US", 
+  "Jan 2025--May 2025",
+  "Louisiana State University",
+  
+) %>% 
+  resume_entry()
+
+```
 
 ### Workshops
 
-{{< yaml assets/yml/teaching-workshops.yml >}}
+```{r}
+#| output: asis
+
+tribble(
+  ~title, ~location, ~date, ~description, 
+  ~detail1, ~detail2, ~detail3,
+  
+  "Using R for analyses using eBird data: An introduction", 
+  "Thrissur, IN", 
+  "Jun 2024",
+  "Kerala Bird Monitoring Meet (KBMM) 2024", 
+  "Led c. 3 h crash course for c. 20 participants (birders) with assistance from Praveen J", 
+  NA_character_, NA_character_, 
+  
+  "Analysing eBird data with R", 
+  "Thrissur, IN", 
+  "Jun 2023",
+  "Kerala Bird Monitoring Meet (KBMM) 2023", 
+  "Led workshop for c. 20 participants (birders) with assistance from Praveen J", 
+  NA_character_, NA_character_, 
+  
+  "Introduction to Merlin and eBird tools", 
+  "Silchar, IN", 
+  "May 2022",
+  "Assam University, Silchar", 
+  "Assisted Mittal Gala in short outdoor training session for 8 MSc Physics students", 
+  "Introduced features of Merlin Bird ID and eBird Mobile, and demonstrated practical usage", 
+  "Interacted with students on general queries about birds and birding", 
+  
+  "Bird monitoring and eBird", 
+  "Lembucherra, IN", 
+  "May 2022",
+  "College of Agriculture, Lembucherra", 
+  "Assisted Mittal Gala in indoor workshop for c. 40 participants (students and local birders)", 
+  "Provided technical assistance, coordination support, and ad-hoc engagement with audience", 
+  NA_character_, 
+  
+) %>% 
+  resume_entry(details = grep("^detail", names(.)))
+
+```
 
 # Presentations
 
@@ -177,9 +404,9 @@ library(lubridate)
 
 **2023:** *Citizen Science at NCF Field Sites*. Presented with Mittal Gala. NCF Annual Meet 2023, Mysuru, IN.
 
-**2022:** *The impact of the COVID-19 pandemic on birding and birds in India*. NCF Annual Meet 2022, Mysuru, IN. ([See slides or code](https://kartrick.com/slides/2022_ncf-am_covid-ebirding/))
+**2022:** *The impact of the COVID-19 pandemic on birding and birds in India*. NCF Annual Meet 2022, Mysuru, IN. ([Click for slides or code](https://kartrick.com/slides/2022_ncf-am_covid-ebirding/))
 
-**2022:** *The impact of the COVID-19 pandemic on birding and birds in India*. International Ornithological Congress 2022, online. ([See slides or code](https://kartrick.com/slides/2022_ioc-covid-ebirding/))
+**2022:** *The impact of the COVID-19 pandemic on birding and birds in India*. International Ornithological Congress 2022, online. ([Click for slides or code](https://kartrick.com/slides/2022_ioc-covid-ebirding/))
 
 **2022:** *The impact of the COVID-19 pandemic on bird monitoring in India* (poster). Bird Monitoring Symposium 2022, online.
 
@@ -191,21 +418,132 @@ library(lubridate)
 
 # Field Activities
 
-{{< yaml assets/yml/field-activities.yml >}}
+```{r}
+#| output: asis
+
+tribble(
+  ~title, ~location, ~date, ~description, 
+  ~detail1, ~detail2, ~detail3, ~detail4,
+  
+  "Bird Surveys", 
+  "IN", 
+  "2019--24",
+  "Volunteer data collector", 
+  "Periyar Bird Survey (Jan 2023) in Periyar Tiger Reserve, Kerala (team lead)",
+  "Attappady Bird Survey (Dec 2022) in Attappady, Kerala (team lead)",
+  "Panna Bird Survey (Mar 2022) in Panna Tiger Reserve, Madhya Pradesh (team lead)",
+  "Wet Season Survey of Kerala Bird Atlas (Jul 2019) in Silent Valley National Park, Kerala",
+  
+  "Field research", 
+  "Dudhwa, IN", 
+  "Apr 2023",
+  "Team member", 
+  "Contributed to data collection and discussions during the Bengal Florican survey (part of the grassland monitoring project of The Habitats Trust) in Dudhwa--Pilibhit landscape, Uttar Pradesh", 
+  NA_character_, NA_character_, NA_character_,
+  
+  "Expeditions", 
+  "Betul, IN", 
+  "Feb 2023",
+  "Expedition member", 
+  "Joined mini-expedition to survey the birds of Betul, an underbirded district in Madhya Pradesh", 
+  NA_character_, NA_character_, NA_character_,
+
+) %>% 
+  resume_entry(details = grep("^detail", names(.)))
+
+```
 
 # Other Activities
 
 ### Organisational
 
-{{< yaml assets/yml/other-activities-org.yml >}}
+```{r}
+#| output: asis
+
+tribble(
+  ~title, ~location, ~date, ~description, 
+  ~detail1, ~detail2, 
+  
+  "North Wayanad Forest Division Bird Survey 2023", 
+  "North Wayanad, IN", 
+  "Mar 2023",
+  "Organiser", 
+  "Helped formulate survey methodology, and managed technical logistics (eBird as a tool) and data quality",
+  NA_character_, 
+  
+  "National Seminar DESIEI 2018", 
+  "Bengaluru, IN", 
+  "Dec 2018",
+  "Organiser, Editor", 
+  "Member of symposium's Organising Committee",
+  "Led editorial work including editing, proofreading, typesetting, and publishing of Abstracts book"
+
+) %>% 
+  resume_entry(details = grep("^detail", names(.)))
+
+```
 
 ### Volunteering
 
-{{< yaml assets/yml/other-activities-vol.yml >}}
+```{r}
+#| output: asis
+
+tribble(
+  ~title, ~location, ~date, ~description, ~details, 
+  
+  "eBird data analysis consultation, Bird Count India", 
+  "Online", 
+  "Dec 2022--Dec 2024",
+  "Office Hours", 
+  "Offered office hours consultation for individuals or groups on how to analyse eBird data (see more at https://birdcount.in/analysis-consultation/)",
+  
+  "eBird data quality", 
+  "Online", 
+  "May 2022--present",
+  "Regional Reviewer & Hotspot Editor", 
+  "Regional Reviewer for Tripura, IN; Hotspot Editor for Tripura, In & Meghalaya, IN",
+  
+  "Bird Monitoring Symposium 2023", 
+  "Online", 
+  "Mar 2023",
+  "Volunteer", 
+  "Managed session talks, Q&As and comments on Discord, as well as assisted participants with queries",
+  
+  "NCF Annual Meet 2022", 
+  "Mysuru, IN", 
+  "Oct 2022",
+  "Volunteer", 
+  "MCd a session of talks",
+  
+  "Bird Monitoring Symposium 2022", 
+  "Online", 
+  "Apr 2022",
+  "Volunteer", 
+  "Managed session talks, Q&As and comments on Slack, as well as assisted participants with queries",
+
+) %>% 
+  resume_entry(details = "details")
+
+```
 
 ### Administrative
 
-{{< yaml assets/yml/other-activities-adm.yml >}}
+```{r}
+#| output: asis
+
+tribble(
+  ~title, ~location, ~date, ~description, ~details, 
+  
+  "Server administration", 
+  "Bengaluru, IN", 
+  "2022--24",
+  "Coordinator", 
+  "Coordinated usage of NCF High Altitude Programme's high-performance server among various interested parties, as well as its maintenance",
+
+) %>% 
+  resume_entry(details = "details")
+
+```
 
 # Mentoring
 
