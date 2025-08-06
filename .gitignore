@@ -2,13 +2,10 @@
 .Rhistory
 .RData
 .Ruserdata
+
 CV with markdown/
 examples/
-fonts/
 past_versions/
-cvpic.jpg
-awesome-cv.cls
-.httr-oauth
 
-# ORCID auth
+# ORCID auth (but not using API now so unnecessary)
 .Renviron
