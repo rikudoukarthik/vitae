@@ -24,7 +24,6 @@ author:
       text: Bluesky
       url: https://bsky.app/profile/kartrick.bsky.social
 profile-photo: "cvpic.jpg"
-# date: "`r format(Sys.time(), format = '%B %Y')`"
 style:
    color-accent: "A92330"
    color-accent-dark: "771822"

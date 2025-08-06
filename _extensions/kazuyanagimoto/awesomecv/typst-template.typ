@@ -373,7 +373,7 @@ $endif$
 #let resume(
   title: "CV",
   author: (:),
-  date: datetime.today().display("[month repr:long] [day], [year]"),
+  date: datetime.today().display("[month repr:long] [year]"),
   profile-photo: "",
   body,
 ) = {
