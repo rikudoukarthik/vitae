@@ -23,10 +23,10 @@ $if(style.color-accent)$
 $else$
 #let color-accent = color-accent-default
 $endif$
-$if(style.color-accent-dark)$
-#let color-accent-dark = rgb("$style.color-accent-dark$")
+$if(style.color-link)$
+#let color-link = rgb("$style.color-link$")
 $else$
-#let color-accent-dark = color-accent-default
+#let color-link = color-darknight
 $endif$
 $if(style.font-header)$
 #let font-header = "$style.font-header$"
@@ -373,7 +373,7 @@ $endif$
 #let resume(
   title: "CV",
   author: (:),
-  date: datetime.today().display("[month repr:long] [year]"),
+  date: datetime.today().display("[month repr:long] [day], [year]"),
   profile-photo: "",
   body,
 ) = {
@@ -412,12 +412,6 @@ $endif$
       ]
     ],
   )
-
-
-  show link: this => {
-    text(this, fill: color-accent-dark)
-  }
-  
   
   // set paragraph spacing
 
@@ -460,6 +454,9 @@ $endif$
     smallcaps[#it.body]
   }
   
+  // Other settings
+  show link: set text(fill: color-link)
+
   // Contents
   create-header(firstname: author.firstname,
                 lastname: author.lastname,

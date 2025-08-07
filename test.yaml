@@ -1,0 +1,7 @@
+test:
+  title: "YAML input still fails"
+  location: "Location"
+  date: [01--02 Jan 2025]
+  description: "Input here with '--'"
+  details:
+    - "Detail which uses an em-dash---lovely! *Bold* works but not with **two stars**. _Italics_ also works but with underscores."

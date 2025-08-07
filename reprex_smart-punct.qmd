@@ -9,7 +9,7 @@ execute:
 
 # Markdown text
 
-Nice formatting---including Pandoc's *Smart Punctuation*.
+Nice formatting---including Pandoc's *Smart Punctuation* where one star is italics and not bold.
 
 # Resume entries
 
@@ -25,9 +25,20 @@ tribble(
   "Title", 
   "Location", 
   "01--02 Jan 2025",
-  "Date input here with '--'",
-  "Detail which uses an em-dash---lovely! But still not **bold**."
+  "Input here with '--'",
+  "Detail which uses an em-dash---lovely! *Bold* works but not with **two stars**. _Italics_ also works but with underscores."
 ) |>
   resume_entry(details = "details")
 ```
 
+```{=typst}
+#resume-entry(title: "Title",
+              location: "Location",
+              date: [01--02 Jan 2025],
+              description: "Input here with '--' enclosed in quotes does not work",)
+#resume-item[
+- Detail which uses an em-dash---lovely! *Bold* works but not with **two stars**. _Italics_ also works but with underscores.
+]
+```
+
+{{< yaml test.yaml >}}

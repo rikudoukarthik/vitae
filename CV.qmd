@@ -23,9 +23,6 @@ author:
     - icon: assets/icon/si-bluesky.svg # fa brands bluesky not working
       text: Bluesky
       url: https://bsky.app/profile/kartrick.bsky.social
-    # - icon: assets/icon/e.svg
-    #   text: eBird
-    #   url: https://ebird.org/profile/ODQxNTky
     - icon: assets/icon/crow-solid-full.svg
       text: eBird
       url: https://ebird.org/profile/ODQxNTky
@@ -33,14 +30,15 @@ author:
       text: iNat
       url: https://www.inaturalist.org/people/337978
 # profile-photo: "cvpic.jpg"
+date: today
+date-format: MMMM YYYY 
+# https://github.com/kazuyanagimoto/quarto-awesomecv-typst/issues/10#issuecomment-3161870253
 style:
    color-accent: "A92330"
-   color-accent-dark: "771822"
+   color-link: "771822"
    font-text: "Libertinus Serif"
    font-header: "Petrona"
-   # for original Font Awesome font, see https://github.com/kazuyanagimoto/cv/tree/d7118a5d6317f3758447a8a9054a8577f42bc30a/assets/fonts/fontawesome
 format: awesomecv-typst
-# install.packages("typstcv", repos = "https://kazuyanagimoto.r-universe.dev")
 execute: 
   echo: false
   warning: false
@@ -50,11 +48,14 @@ editor_options:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
 # library(vitae)
 library(tidyverse)
 library(glue)
 # library(rorcid)
 library(lubridate)
+
+# install.packages("typstcv", repos = "https://kazuyanagimoto.r-universe.dev")
 library(typstcv)
 ```
 
@@ -70,33 +71,29 @@ I have wide-ranging ***macroecological interests*** that have begun to lean towa
 tribble(
   ~title, ~location, ~date, ~description, ~detail1, ~detail2,
   
-  "PhD, Biological Sciences (ongoing)", "Baton Rouge, US", "2025--present",
+  "PhD, Biological Sciences (ongoing)", 
+  "Baton Rouge, US", 
+  "2025--present",
   "Louisiana State University", 
   # "Thesis: XYZ"
   "Division: Systematics, Ecology and Evolution",
   "Supervisor: Flavia Montaño-Centellas",
   
-  "MSc, Ecology", "České Budějovice, CZ", "2019--21",
+  "MSc, Ecology", 
+  "České Budějovice, CZ", 
+  "2019--21",
   "University of South Bohemia", 
   "Thesis: Habitat selection in post-breeding temperate forest birds",
   "Supervisor: Kateřina Sam",
   
+  "BSc, Biotechnology, Chemistry, Zoology", 
+  "Bengaluru, IN", 
+  "2016--19",
+  "Christ University",
+  NA_character_, NA_character_
+  
 ) %>% 
   resume_entry(details = grep("^detail", names(.)))
-
-```
-
-```{r}
-#| output: asis
-
-tribble(
-  ~title, ~location, ~date, ~description, 
-  
-  "BSc, Biotechnology, Chemistry, Zoology", "Bengaluru, IN", "2016--19",
-  "Christ University"
-  
-) %>% 
-  resume_entry()
 
 ```
 
@@ -136,27 +133,23 @@ tribble(
 ```{r}
 #| output: asis
 
-data.frame(
-  title = "Rector's Award",
-  location = "České Budějovice, CZ",
-  date =  "2021",
-  description = "University of South Bohemia, 25 May 2021",
-  details = "CZK 2,500 (\\~€100), for outstanding results in study"
-) %>% 
-  resume_entry(details = "details")
+tribble(
+  ~title, ~location, ~date, ~description, ~detail1, ~detail2,
+  
+  "Rector's Award", 
+  "České Budějovice, CZ",
+  "May 2021",
+  "University of South Bohemia",
+  "CZK 2,500 (\\~€100), for outstanding results in study",
+  NA_character_,
 
-```
-
-```{r}
-#| output: asis
-
-data.frame(
-  title = "Graduate study Merit Scholarship",
-  location = "České Budějovice, CZ",
-  date =  "2020",
-  description = "University of South Bohemia, Oct 2020--May 2021",
-  details1 = "CZK 1,500 (\\~€60) awarded per month for 10 months in second year of study",
-  details2 = "Scholarship of the Ministry of Education, Youth and Sports"
+  "Graduate study Merit Scholarship",
+  "České Budějovice, CZ",
+  "Oct 2020--May 2021",
+  "University of South Bohemia",
+  "CZK 1,500 (\\~€60) awarded per month for 10 months in second year of study", 
+  "Scholarship of the Ministry of Education, Youth and Sports"
+  
 ) %>% 
   resume_entry(details = grep("^detail", names(.)))
 
@@ -194,8 +187,6 @@ data.frame(
 1. **K Thrikkadeeri**, I Freiberga, LR Jorge, K Sam *(in prep.)*. Post-breeding birds dynamically track habitat structure over the season in a Central European forest.
 1. **K Thrikkadeeri**, ..., G Shahabuddin *(in prep.)*. A checklist of butterflies from a land-use intensification gradient in Kumaon Himalayas.
 
-
-
 # Work Experience
 
 ```{r}
@@ -203,23 +194,13 @@ data.frame(
 
 tribble(
   ~title, ~location, ~date, ~description, 
+  ~detail1, ~detail2, ~detail3, ~detail4, ~detail5, ~detail6, ~detail7,
   
   "Louisiana State University", 
   "Baton Rouge, US", 
   "Jan 2025--present",
-  "Graduate Assistant"
-  
-) %>% 
-  resume_entry()
-
-```
-
-```{r}
-#| output: asis
-
-tribble(
-  ~title, ~location, ~date, ~description, 
-  ~detail1, ~detail2, ~detail3, ~detail4, ~detail5, ~detail6, ~detail7,
+  "Graduate Assistant",
+  NA_character_, NA_character_, NA_character_, NA_character_, NA_character_, NA_character_, NA_character_,
   
   "Nature Conservation Foundation", 
   "Bengaluru, IN", 
@@ -275,8 +256,6 @@ tribble(
   "Assisted in field work and data entry for a project on breeding ecology of the Yellow-wattled Lapwing",
   "Additionally, learned basics of camera trapping, scale counting for snakes and PCQ vegetation survey", 
   NA_character_, NA_character_, NA_character_, NA_character_, NA_character_,  
-  
-  
   
 ) %>% 
   resume_entry(details = grep("^detail", names(.)))
@@ -357,7 +336,7 @@ tribble(
 
 <br>
 
-Assisted a high school student in designing a behavioural study on the breeding ecology of Purple Sunbird.
+**2022--23:** Advised high school student's behavioural study on breeding ecology of Purple Sunbird.
 
 # Presentations
 
