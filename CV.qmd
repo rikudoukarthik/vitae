@@ -77,7 +77,7 @@ tribble(
   "Louisiana State University", 
   # "Thesis: XYZ"
   "Division: Systematics, Ecology and Evolution",
-  "Supervisor: Flavia Montaño-Centellas",
+  "Supervisor: Flavia A Montaño-Centellas",
   
   "MSc, Ecology", 
   "České Budějovice, CZ", 
@@ -165,9 +165,9 @@ tribble(
 
 1. A Viswanathan, **K Thrikkadeeri**, et al. (2025). State of India’s Birds 2023: A framework to leverage semi-structured citizen science for bird conservation. *Ecosphere* 16(7). DOI: https://doi.org/10.1002/ecs2.70290
 1. **K Thrikkadeeri** & A Viswanathan (2024). Despite short-lived changes, COVID-19 pandemic had minimal large-scale impact on citizen science participation in India. *Ornithological Applications* 126(4). DOI: https://doi.org/10.1093/ornithapp/duae024 
-1. **K Thrikkadeeri**, ..., A Viswanathan (2024). Birdwatchers piecing together Locustella jigsaw: Insights on the wintering distribution of the cryptic West Himalayan Bush Warbler *Locustella kashmirensis*. *Indian BIRDS* 20(3). 
+1. **K Thrikkadeeri**, ..., A Viswanathan (2024). Birdwatchers piecing together Locustella jigsaw: Insights on the wintering distribution of the cryptic West Himalayan Bush Warbler *Locustella kashmirensis*. *Indian BIRDS* 20(3), p. 70--79. 
 1. L Schillé, ..., **K Thrikkadeeri**, et al. (2024). Latitudinal gradient in avian insectivory: complementary effects of climate, habitat and bird diversity. *Journal of Biogeography* 51(6). DOI: https://doi.org/10.1111/jbi.14808 
-1. J Praveen, ..., **K Thrikkadeeri**, et al. (2022). Kerala Bird Atlas 2015--20: features, outcomes and implications of a citizen-science project. *Current Science* 122(3). 
+1. J Praveen, ..., **K Thrikkadeeri**, et al. (2022). Kerala Bird Atlas 2015--20: features, outcomes and implications of a citizen-science project. *Current Science* 122(3). DOI: https://doi.org/10.18520/cs/v122/i3/298-309
 
 ### Software
 
@@ -179,7 +179,7 @@ tribble(
 
 ### Books 
 
-1. PU Antony, ..., **K Thrikkadeeri**, et al. (2018). *Butterflies of Christ University Main Campus---A Pictorial Guide*. Centre for Publications, Christ University, Bangalore, India. 
+1. PU Antony, ..., **K Thrikkadeeri**, et al. (2018). *Butterflies of Christ University Main Campus---A Pictorial Guide*. Centre for Publications, Christ University, Bangalore, India. ISBN: 978-93-82305-98-9
 
 ### In pipeline
 
@@ -396,6 +396,12 @@ Coordinated usage of NCF High Altitude Programme's high-performance server among
 
 # Referees
 
+**Dr Flavia A Montaño-Centellas**
+
+Assistant Professor, Department of Biological Sciences  
+Louisiana State University, Baton Rouge, USA  
+Email: fmontano@lsu.edu  
+
 **Dr Ashwin Viswanathan**
 
 Research Associate, Education and Public Engagement  
@@ -414,10 +420,11 @@ Scientist, Education and Public Engagement
 Nature Conservation Foundation, Mysuru, India  
 Email: praveen.j@ncf-india.org  
 
-**Mgr Katerina Sam, PhD**
+**Dr Kateřina Sam**
 
-Head, Laboratory of Multitrophic Interactions  
-Biology Centre of the Czech Academy of Sciences, České Budějovice, Czech Republic  
+Department of Zoology, University of South Bohemia &  
+Institute of Entomology, Biology Centre, Czech Academy of Sciences  
+České Budějovice, Czech Republic  
 Email: katerinatvardikova@gmail.com  
 
 **Dr PU Antony**
