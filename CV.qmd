@@ -149,6 +149,13 @@ tribble(
 tribble(
   ~title, ~location, ~date, ~description, ~detail1, ~detail2,
   
+  "AOS Expanding Opportunities Travel Grant", 
+  "Amherst, US",
+  "Aug 2026",
+  "American Ornithological Society",
+  "USD \\$1,970 in support of travel & registration for AOS 2026 conference in Amherst, Massachusetts, USA",
+  NA_character_,
+  
   "Rector's Award", 
   "České Budějovice, CZ",
   "May 2021",
@@ -285,23 +292,29 @@ tribble(
 
 tribble(
   ~title, ~location, ~date, ~description, 
-  ~detail1, ~detail2, ~detail3,
+  ~detail1, ~detail2, 
 
+  
+  "BIOL 4254 Principles of Ecology Lab",
+  "Baton Rouge, US",
+  "Aug 2026--present",
+  "Louisiana State University",
+  "Fall 2026",
+  NA_character_,
   
   "BIOL 1209 Introductory Biology Lab II",
   "Baton Rouge, US",
-  "Aug 2025--present",
+  "Aug 2025--May 2026",
   "Louisiana State University",
-  "Fall 2025 (2 sec. x 24 students), Spring 2026 (1 sec. x 60 students), Fall 2026",
+  "Fall 2025 (2 sec. x 24 students), Spring 2026 (1 sec. x 60 students)",
   "Overall performance evaluation 'Exceeds Expectations' (Spring 2026)",
-  NA_character_,
 
   "BIOL 1208 Introductory Biology Lab I", 
   "Baton Rouge, US", 
   "Jan 2025--May 2025",
   "Louisiana State University",
   "Overall performance evaluation 'Exceeds Expectations' (Spring 2025)",
-  NA_character_, NA_character_
+  NA_character_
   
 ) %>% 
   resume_entry(details = grep("^detail", names(.)))
@@ -316,6 +329,13 @@ tribble(
 tribble(
   ~title, ~location, ~date, ~description, 
   ~detail1, ~detail2, ~detail3,
+  
+  "Introduction to GitHub workflows", 
+  "Baton Rouge, US", 
+  "Apr 2026",
+  "Montaño Lab", 
+  "Led c. 3 h crash course for members of Montaño Lab, introducing Git and GitHub, with demos of how to integrate it into workflows", 
+  NA_character_, NA_character_, 
   
   "Using R for analyses using eBird data: An introduction", 
   "Thrissur, IN", 
@@ -363,13 +383,17 @@ tribble(
 
 <!-- ### Contributed -->
 
+**2026:** *State of India’s Birds 2023: A framework to leverage semi-structured citizen science for bird conservation*. AOS 2026, Amherst, USA. ([Get slides or code](https://kartrick.com/slides/2026_aos_soib/))
+
+**2026:** *How does the environment shape global diversity patterns of dryland bird assemblages?* (Poster.) AOS 2026, Amherst, USA.
+
 **2023:** *Citizen Science at NCF Field Sites*. Presented with Mittal Gala. NCF Annual Meet 2023, Mysuru, IN.
 
-**2022:** *The impact of the COVID-19 pandemic on birding and birds in India*. NCF Annual Meet 2022, Mysuru, IN. ([Click for slides or code](https://kartrick.com/slides/2022_ncf-am_covid-ebirding/))
+**2022:** *The impact of the COVID-19 pandemic on birding and birds in India*. NCF Annual Meet 2022, Mysuru, IN. ([Get slides or code](https://kartrick.com/slides/2022_ncf-am_covid-ebirding/))
 
-**2022:** *The impact of the COVID-19 pandemic on birding and birds in India*. International Ornithological Congress 2022, online. ([Click for slides or code](https://kartrick.com/slides/2022_ioc-covid-ebirding/))
+**2022:** *The impact of the COVID-19 pandemic on birding and birds in India*. International Ornithological Congress 2022, online. ([Get slides or code](https://kartrick.com/slides/2022_ioc-covid-ebirding/))
 
-**2022:** *The impact of the COVID-19 pandemic on bird monitoring in India* (poster). Bird Monitoring Symposium 2022, online.
+**2022:** *The impact of the COVID-19 pandemic on bird monitoring in India*. (Poster.) Bird Monitoring Symposium 2022, online.
 
 **2019:** *Inventory of butterfly species along a land-use intensification gradient in moist temperate forest biome in Kumaon Himalayas*. Ecology Seminar, University of South Bohemia, CZ.
 
